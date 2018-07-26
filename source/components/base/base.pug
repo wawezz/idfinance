@@ -9,7 +9,14 @@ html
         #wrapper
             
             header
-                .topBar.container
+                ul.topBar.container.custom-container
+                    li.topBar__item BRL   #[span.topBar__item-bold.topBar__item-down 0.27] #[span.glyphicon.glyphicon-triangle-top]
+                    li.topBar__item EUR   #[span.topBar__item-bold.topBar__item-down 0.85]
+                    li.topBar__item ARS   #[span.topBar__item-bold.topBar__item-up 0.041196]
+                    li.topBar__item GBP   #[span.topBar__item-bold.topBar__item-up 0.74]
+                    li.topBar__item JPY   #[span.topBar__item-bold.topBar__item-up 110.99]
+                .header.container.custom-container
+                    img(src=require("./images/logo.png"))
             block main
     footer
         block footer

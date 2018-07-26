@@ -1,4 +1,7 @@
 @import "~bootstrap/scss/functions";
+//colors
+
+$blue: #0071bc;
 
 //fonts
 $font-family-sans-serif: Lato, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -21,3 +24,7 @@ $container-max-widths: (
 );
 
 @import "~bootstrap/scss/variables";
+
+.container.custom-container {
+  padding: 0 54px;
+}

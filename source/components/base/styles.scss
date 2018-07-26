@@ -2,4 +2,35 @@
 
 .topBar{
     height: 27px;
+    background-color: $blue;
+    line-height: 1.7;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    .topBar__item {
+        padding: 0;
+        background: none;
+        width: 180px;
+        text-align: center;
+        color: $white;
+        font-weight: 400;
+        list-style: none;
+        .topBar__item-bold{
+            font-weight: 700;
+        }
+        .topBar__item-up::after{
+            content: "\f0d8";
+        }
+        .topBar__item-down::after{
+            content: "\e252";
+        }
+    }
+}
+
+.header{
+    height: 106px;
+    align-items: center;
+    display: flex;
 }
