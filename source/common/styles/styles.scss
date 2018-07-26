@@ -1,0 +1,38 @@
+@import "./globals";
+@import "./vendor/styles";
+@import "./../fonts/styles";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+  &:before {
+    box-sizing: border-box;
+  }
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  min-height: 100%;
+  color: $white;
+  font-size: 15px;
+  &[class*=" no-"] {
+    overflow: hidden;
+    body {
+      visibility: visible;
+    }
+    .not-support {
+      display: block;
+    }
+  }
+}
+
+a,
+input,
+select,
+button {
+  outline: none !important;
+}
