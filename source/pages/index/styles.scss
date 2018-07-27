@@ -132,6 +132,9 @@
   margin: 40px 0;
   .slick-slide {
     margin: 0 25px;
+    img{
+      margin: 0 auto;
+    }
   }
   .slick-prev, .slick-next {
     height: 30px;
