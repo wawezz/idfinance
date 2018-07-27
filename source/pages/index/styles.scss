@@ -1,3 +1,147 @@
-h1{
-  color: brown;
+.topBanner{
+  position: relative;
+  .topBanner__overlay{
+    width: calc(100% - 30px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    background-color: #000;
+    opacity: .62;
+  }
+  .topBanner__textOverlay{
+    width: calc(100% - 30px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .topBanner__textWrapper{
+      width: 950px;
+      color: #fff;
+      .topBanner__title{
+        font-weight: 200;        
+        font-size: 48px;
+      }
+      .topBanner__text{
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.main{
+  .main__wrapper{
+    padding: 30px 0;
+  }
+}
+
+.infoBlock{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  .infoBlock__data{
+    width: 50%;
+    .infoBlock__title{
+      font-weight: 200;
+      font-size: 30px;
+      color: #0071bc;
+      margin-bottom: 15px;
+    }
+    .infoBlock__text{
+      font-weight: 400;
+      font-size: 16px;
+      color: #333;
+    }
+  }
+  .infoBlock__imageWrapper{
+    width: 50%;
+    padding: 0 22px;
+    .infoBlock__image{
+      width: 100%;
+    }
+  }
+}
+
+.mainPartners{
+  margin: 76px auto 55px auto; 
+  padding: 0 15px;
+  .mainPartners__item{
+    padding: 0 30px;
+  }
+  .mainPartners__logoWrapper{
+    text-align: center; 
+    margin-bottom: 15px;
+  }
+  .mainPartners__title{
+    font-weight: 200;
+    font-size: 16px;
+    color: #333;  
+    text-transform: uppercase; 
+    line-height: 1.2;
+  }
+}
+
+.nextEvent{
+  margin: 75px auto;
+  font-weight: 400;
+  font-size: 24px;
+  color: #333;
+  .nextEvent__title{
+    font-size: 30px;
+    font-weight: 200;
+    color: #0071bc;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .nextEvent__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    .nextEvent__date{
+      .fa{
+        color: #0071bc;
+        margin-right: 10px;
+      }
+    }
+    .nextEvent__place{
+      .fa{
+        color: #0071bc;
+        margin-right: 10px;
+      }
+    }
+  }
+  .nextEvent__more{
+    text-align: center;
+    margin: 25px 0;
+    .nextEvent__moreLink{
+      color: #0071bc;
+      font-size: 18px;
+      font-weight: 200;
+      text-decoration: underline;
+    }
+  }
+}
+
+.partnersSlider{
+  margin: 40px 0;
+  .slick-slide {
+    margin: 0 25px;
+  }
+  .slick-prev, .slick-next {
+    height: 30px;
+    width: 30px;
+    &::before,{
+      font-size: 30px;
+    }
+  }
+  .slick-track{
+    display: flex;
+    align-items: center;
+  }
 }

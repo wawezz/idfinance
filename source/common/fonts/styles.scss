@@ -53,6 +53,16 @@ $fonts-path: '../../common/fonts';
 
 @font-face {
   font-family: "lato";
+  src: url($fonts-path + "/Lato-Black.eot");
+  src: url($fonts-path + "/Lato-Black.eot?#iefix") format("embedded-opentype"),
+  url($fonts-path + "/Lato-Black.woff") format("woff"),
+  url($fonts-path + "/Lato-Black.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
   src: url($fonts-path + "/Lato-Thin.eot");
   src: url($fonts-path + "/Lato-Thin.eot?#iefix") format("embedded-opentype"),
   url($fonts-path + "/Lato-Thin.woff") format("woff"),

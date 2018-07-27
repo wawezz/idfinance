@@ -2,6 +2,12 @@
 @import "./vendor/styles";
 @import "./../fonts/styles";
 
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-loader-path: "~slick-carousel/slick/";
+$slick-arrow-color: #d2d2d2; 
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 
