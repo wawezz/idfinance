@@ -4,27 +4,22 @@
     height: 27px;
     background-color: $blue;
     line-height: 1.7;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    .topBar__item {
-        padding: 0;
-        background: none;
-        width: 180px;
-        text-align: center;
-        color: $white;
-        font-weight: 400;
-        list-style: none;
-        .topBar__item-bold{
-            font-weight: 700;
-        }
-        .topBar__item-up::after{
-            content: "\f0d8";
-        }
-        .topBar__item-down::after{
-            content: "\e252";
+    .topBar__wrapper{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        .topBar__item {
+            padding: 0;
+            background: none;
+            width: 180px;
+            text-align: center;
+            color: $white;
+            font-weight: 400;
+            .topBar__item-bold{
+                font-weight: 700;
+            }
         }
     }
 }
@@ -33,4 +28,72 @@
     height: 106px;
     align-items: center;
     display: flex;
+    justify-content: space-between;
+    .header__nav{
+        display: flex;
+        align-items: center;
+        .header__menu{
+            margin-top: 0;
+            margin-bottom: 0;
+            display: inline-flex;
+            .header__menuItem{
+                margin:0 30px;
+                .header__menuLink{
+                    font-size: 21px;
+                    font-weight: 600;
+                    color: $dark-grey;
+                }
+            }
+        }
+        .header__search{
+            display: inline-flex;
+            margin:0 15px;
+        }
+        .header__langs{
+            display: inline-flex;
+            margin:0 0 0 25px;
+            .header__langsItem{
+                margin-right: 12px;
+                img{
+                    display: block;
+                }
+                &:last-child{
+                    margin-right: 0; 
+                }
+                &.active{
+                    opacity: .3;
+                }
+                .header__langsLink{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: $dark-blue;
+    .footer__wrapper{
+        height: 97px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .footer__copyright{
+            font-size: 18px;
+            font-weight: 400;
+            color: $white;
+        }
+        .footer__social{
+            margin-top: 0;
+            margin-bottom: 0;
+            display: flex;
+            .footer__socialItem{
+                margin: 0 12px;
+                &:last-child{
+                    margin-right: 0; 
+                }
+            }
+        }
+    }
 }

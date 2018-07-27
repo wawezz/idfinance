@@ -10,7 +10,7 @@ module.exports = function () {
                     },
                 },
                 {
-                    test: /\.(woff|woff2|ttf|eot|svg)$/,
+                    test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
                     loader: "file-loader",
                     options: {
                         name: "files/fonts/[name].[ext]"

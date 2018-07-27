@@ -1,6 +1,10 @@
 @import "./globals";
 @import "./vendor/styles";
 @import "./../fonts/styles";
+
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -35,4 +39,8 @@ input,
 select,
 button {
   outline: none !important;
+}
+
+li{
+  list-style: none;
 }

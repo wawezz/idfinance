@@ -9,14 +9,44 @@ html
         #wrapper
             
             header
-                ul.topBar.container.custom-container
-                    li.topBar__item BRL   #[span.topBar__item-bold.topBar__item-down 0.27] #[span.glyphicon.glyphicon-triangle-top]
-                    li.topBar__item EUR   #[span.topBar__item-bold.topBar__item-down 0.85]
-                    li.topBar__item ARS   #[span.topBar__item-bold.topBar__item-up 0.041196]
-                    li.topBar__item GBP   #[span.topBar__item-bold.topBar__item-up 0.74]
-                    li.topBar__item JPY   #[span.topBar__item-bold.topBar__item-up 110.99]
+                .topBar
+                    ul.topBar__wrapper.container.custom-container
+                        li.topBar__item BRL   #[span.topBar__item-bold 0.27] #[i.fa.fa-caret-down]
+                        li.topBar__item EUR   #[span.topBar__item-bold 0.85] #[i.fa.fa-caret-down]
+                        li.topBar__item ARS   #[span.topBar__item-bold 0.041196] #[i.fa.fa-caret-up]
+                        li.topBar__item GBP   #[span.topBar__item-bold 0.74] #[i.fa.fa-caret-up]
+                        li.topBar__item JPY   #[span.topBar__item-bold 110.99] #[i.fa.fa-caret-up]
                 .header.container.custom-container
                     img(src=require("./images/logo.png"))
+                    .header__nav
+                        ul.header__menu
+                            li.header__menuItem #[a(href="#").header__menuLink About us]
+                            li.header__menuItem #[a(href="#").header__menuLink Products]
+                            li.header__menuItem #[a(href="#").header__menuLink Investors]
+                            li.header__menuItem #[a(href="#").header__menuLink Contacts]
+                            li.header__menuItem #[a(href="#").header__menuLink News]
+                        a(href="#").header__search
+                            img(src=require("./images/search.png"))
+                        ul.header__langs
+                            li.header__langsItem 
+                                a(href="#").header__langsLink
+                                    img(src=require("./images/us.png"))
+                                    | EN
+                            li.header__langsItem.active 
+                                a(href="#").header__langsLink
+                                    img(src=require("./images/es.png"))
+                                    | ES
             block main
-    footer
-        block footer
+            footer.footer
+                .footer__wrapper.container.custom-container
+                    .footer__copyright © 2012 — 2018 ID Finance
+                    ul.footer__social 
+                        li.footer__socialItem
+                            a(href="#").footer__socialLink
+                                img(src=require("./images/li-icon.png"))
+                        li.footer__socialItem
+                            a(href="#").footer__socialLink
+                                img(src=require("./images/fb-icon.png"))
+                        li.footer__socialItem
+                            a(href="#").footer__socialLink
+                                img(src=require("./images/tw-icon.png"))
