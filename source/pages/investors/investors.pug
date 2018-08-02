@@ -1,0 +1,30 @@
+extends ../../components/base/base
+block title
+    | Index page
+block main
+    .topSecondaryBar
+        ul.topSecondaryBar__menu.container.custom-container
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Financial Results]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Corporate Governance]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Events]
+    .topBanner.container
+        img(src=require("./images/index_main.jpg"))
+        .topBanner__overlay
+        .topBanner__textOverlay
+            .topBanner__textWrapper
+                h1.topBanner__title Data Science. Credit Scoring.#[br]Digital Finance
+                h3.topBanner__text ID Finance is a fast-growing fintech company specializing in data science, credit scoring and digital finance in emerging and well-developed markets.
+    .main.container.custom-container
+        .main__wrapper
+            .nextEvent
+                .nextEvent__title Next event
+                .nextEvent__wrapper
+                    .nextEvent__date 
+                        i.fa.fa-calendar 
+                        | 15 —17 January 2018
+                    .nextEvent__name Euromoney Central and Eastern European Forum
+                    .nextEvent__place 
+                        i.fa.fa-map-marker
+                        | Vienna
+                .nextEvent__more
+                    a(href="#").nextEvent__moreLink More 

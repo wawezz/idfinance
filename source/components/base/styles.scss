@@ -42,6 +42,10 @@
                     font-size: 21px;
                     font-weight: 600;
                     color: $dark-grey;
+                    &.active{
+                        color: #0071bc;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -94,6 +98,101 @@
                 &:last-child{
                     margin-right: 0; 
                 }
+            }
+        }
+    }
+}
+
+.main{
+    .main__wrapper{
+      padding: 30px 0;
+    }
+}
+
+.nextEvent{
+    margin: 75px auto;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333;
+    .nextEvent__title{
+      font-size: 30px;
+      font-weight: 200;
+      color: #0071bc;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .nextEvent__wrapper{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #ddd;
+      .nextEvent__date{
+        .fa{
+          color: #0071bc;
+          margin-right: 10px;
+        }
+      }
+      .nextEvent__place{
+        .fa{
+          color: #0071bc;
+          margin-right: 10px;
+        }
+      }
+    }
+    .nextEvent__more{
+      text-align: center;
+      margin: 25px 0;
+      .nextEvent__moreLink{
+        color: #0071bc;
+        font-size: 18px;
+        font-weight: 200;
+        text-decoration: underline;
+      }
+    }
+}
+
+.infoBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    .infoBlock__data{
+      width: 50%;
+      .infoBlock__title{
+        font-weight: 200;
+        font-size: 30px;
+        color: #0071bc;
+        margin-bottom: 15px;
+      }
+      .infoBlock__text{
+        font-weight: 400;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+    .infoBlock__imageWrapper{
+      width: 50%;
+      padding: 0 22px;
+      .infoBlock__image{
+        width: 100%;
+      }
+    }
+}
+
+.topSecondaryBar{
+    height: 60px;
+    background-color: #1c2e54;
+    .topSecondaryBar__menu{
+        display: flex;
+        justify-content: flex-end;
+        line-height: 3.3;
+        .topSecondaryBar__menuItem{
+            display: inline-flex;
+            margin-left: 50px;
+            .topSecondaryBar__menuLink{
+                color: #fff;
+                font-weight: 600;
+                font-size: 18px;
             }
         }
     }
