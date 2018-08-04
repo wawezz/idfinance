@@ -1,0 +1,45 @@
+extends ../../components/base/base
+block title
+    | Contacts page
+block main
+    .topBanner.container
+        img(src=require("./images/contactsTop.jpg"))
+        .topBanner__overlay
+        .topBanner__textOverlay
+            .topBanner__textWrapper
+                h1.topBanner__title Lorem ispum dolor sit amet, #[br]consectur adipiscing elit.
+    .main.container.custom-container
+        .main__wrapper
+            .row
+                .contactsBlock.col-6
+                    .contactsBlock__title Contacts
+                        form.contactsBlock__form
+                            .contactsBlock__row
+                                label(for="contactsName").contactsBlock__formLabel Name
+                                input(type="text" value="" id="contactsName" name="contactsName").contactsBlock__formInput
+                            .contactsBlock__row
+                                label(for="contactsEmail").contactsBlock__formLabel Email
+                                input(type="text" value="" id="contactsEmail" name="contactsEmail").contactsBlock__formInput
+                            .contactsBlock__row
+                                label(for="contactsCountry").contactsBlock__formLabel Country
+                                input(type="text" value="" id="contactsCountry" name="contactsCountry").contactsBlock__formInput                             
+                            .contactsBlock__row
+                                label(for="contactsSubject").contactsBlock__formLabel Subject
+                                select(id="contactsSubject" name="contactsSubject").contactsBlock__formSelect
+                                    option(value="")
+                                    option(value="value1") Значение 1
+                                    option(value="value2") Значение 2
+                                    option(value="value3") Значение 3
+                            .contactsBlock__row
+                                label(for="contactsMessage").contactsBlock__formLabel Message
+                                textarea(id="contactsMessage" name="contactsMessage" rows="6").contactsBlock__formTextarea
+                            .contactsBlock__row.contactsBlock__row-bottom
+                                .contactsBlock__agreement 
+                                    label(for="agreement").contactsBlock__checkboxLable
+                                        input(type="checkbox" id="agreement" name="agreement").contactsBlock__checkbox
+                                        span.contactsBlock__checkboxOuter.fa
+                                    .contactsBlock__agreementsText Я согласен на обработку персональных данных
+                                input(value="Отправить" type="submit").contactsBlock__submit
+
+
+                .col-6

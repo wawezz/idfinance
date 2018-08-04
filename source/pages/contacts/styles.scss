@@ -1,0 +1,84 @@
+.contactsBlock{
+    padding: 0 40px;
+    .contactsBlock__title{
+        color: #0071bc;
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+    }
+    .contactsBlock__form{
+        font-size: 18px;
+        font-weight: 400;
+        color: #333;
+        .contactsBlock__formLabel{
+            display: flex;
+            margin: 15px 0 0 0;
+        }
+        .contactsBlock__formInput, .contactsBlock__formSelect, .contactsBlock__formTextarea{
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .contactsBlock__formInput, .contactsBlock__formSelect{
+            height: 60px;
+        }
+        .contactsBlock__formSelect{
+            background-color: #fff;
+        }
+        .contactsBlock__row-bottom{
+            display: flex;
+            margin-top: 22px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contactsBlock__agreement{
+            width: 45%;
+            .contactsBlock__checkboxLable{
+                width: 27px;
+                height: 27px;
+                float: left;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                border: 1px solid #ddd;
+                cursor: pointer;
+                .contactsBlock__checkbox:checked + .contactsBlock__checkboxOuter::before {
+                  content: "\F00c";
+                  display: flex;
+                  height: 25px;
+                  width: 25px;
+                  margin: 0;
+                  padding: 0;
+                  justify-content: center;
+                  align-items: center;
+                }
+                .contactsBlock__checkbox{
+                  display: none;
+                }
+                .contactsBlock__checkboxOuter{
+                  width: 25px;
+                  height: 25px;
+                  background-color: #fff;
+                  display: flex;
+                  position: relative;
+                  color: #0071bc;
+                }
+              }
+              .contactsBlock__agreementsText{
+                display: block;
+                margin-left: 40px;
+                text-align: left;
+              }
+        }
+        .contactsBlock__submit{
+            width: 200px;
+            height: 60px;
+            background-color: #0071bc;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+}
