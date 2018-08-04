@@ -1,0 +1,88 @@
+.eventsList{
+    .eventsList__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        color: #dedede;
+        width: 86%;
+        margin: 0 auto;
+        font-size: 14px;
+        font-weight: 200;
+        border-bottom: 2px solid #dedede;
+    }
+    .eventsList__items{
+        
+        .fa{
+            color: #0071bc;
+        }
+        .eventsList__item{
+            display: flex;
+            height: 125px;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: row;
+            flex-wrap: wrap;
+            color: #333;
+            font-size: 24px;
+            font-weight: 400;
+            .eventsList__itemDate{
+                width: 25%;
+                margin-right: 5%;
+            }
+            .eventsList__itemName{
+                width: 28%;
+                margin-right: 5%;
+            }
+            .eventsList__itemPlace{
+                width: 23%;
+                margin-right: 5%;
+            }
+            .eventsList__itemAction{
+                width: 9%;
+                text-align: right;
+                background-color: #0071bc;
+                border: 2px solid #0071bc;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 5px;
+                padding: 5px;
+                text-align: center;
+                &.ended{
+                    display: none;    
+                }
+            }
+            &.ended{
+                .eventsList__itemAction{
+                    display: none;
+                    &.ended{
+                        display: block;
+                        background-color: transparent;
+                        color: #0071bc;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+        .eventsList__itemHr{
+            display: flex;
+            border-bottom:2px solid #dedede;
+            width: 86%;
+            margin: 0 auto;  
+        }
+    }
+    .eventsList__navigation{
+        display: flex;
+        justify-content: center;
+        margin: 50px auto 10px auto;
+        .eventsList__navigationItem{
+            margin: 0 20px;
+            .eventsList__navigationLink{
+                color: #0071bc;
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+    }
+}
