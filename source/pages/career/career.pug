@@ -1,0 +1,41 @@
+extends ../../components/base/base
+block title
+    | Index page
+block main
+    .topSecondaryBar
+        ul.topSecondaryBar__menu.container.custom-container
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink.active Careers]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Our principles]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Press about us]
+    .topBanner.container
+        img(src=require("./images/careerTop.jpg"))
+        .topBanner__overlay
+        .topBanner__textOverlay
+            .topBanner__textWrapper
+                h1.topBanner__title Become part of out team!
+                h3.topBanner__text Find your purpose and build relationships#[br]with a ID Finance
+                a(href="#").topBanner__button Find Your Role
+    .main.container.custom-container
+        .main__wrapper
+    .connectUs
+        .connectUs__wrapper.container.custom-container
+            .connectUs__title Connect With Us
+            .connectUs__text Stay up to date on ID Finance and possible oppurtunities that open in areas that interest you.
+            form.connectUs__form
+                .connectUs__formRow
+                    .connectUs__formRowsWrapper
+                        input(placeholder="Name" value="" type="text" name="contactName").connectUs__formInput
+                        input(placeholder="Email" value="" type="email" name="contactEmail").connectUs__formInput
+                        input(type="file" id="contactFile" name="contactFile").fileGetter.connectUs__formFile
+                        label(for="contactFile").connectUs__formFileLabel 
+                            .connectUs__formFileLabelButton 
+                                i.fa.fa-file-o
+                                | Resume
+                            .connectUs__formFileLabelInfo.fileSetter Файл не выбран
+                    input(value="Join" type="submit" name="contactsubmit").connectUs__formSubmit
+                .connectUs__formBottom
+                    label(for="agreement").connectUs__formCheckboxLable
+                        input(type="checkbox" id="agreement" name="agreement").connectUs__formCheckbox
+                        span.connectUs__formCheckboxOuter.fa
+                    .connectUs__formBottomText #[span.connectUs__formCheckboxSpanLable I Consent.] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius malesuada convallis. Phasellus pellentesque, mi id consectetur cursus, sapien lorem laoreet velit, vulputate molestie risus quam eu est.
+    hr

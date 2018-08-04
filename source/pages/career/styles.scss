@@ -1,0 +1,117 @@
+.connectUs{
+  background-color: #1c2e54;
+  padding: 35px 0;
+  color: #fff;
+  .connectUs__title{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .connectUs__text{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .connectUs__form{
+    .connectUs__formRow{
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .connectUs__formInput{
+        width: 255px;
+        height: 50px;
+        padding: 0 10px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-right: 38px
+      }
+      .connectUs__formSubmit{
+        height: 50px;
+        width: 185px;
+        text-align: center;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #0071bc;
+        cursor: pointer;
+      }
+      .connectUs__formFile{
+        display: none;
+      }
+      .connectUs__formFileLabel{
+        margin-bottom: 0;
+        .connectUs__formFileLabelButton{
+          width: 255px;
+          height: 50px;
+          padding: 0 10px;
+          font-size: 18px;
+          font-weight: 400;
+          margin-right: 15px;
+          background-color: #fff;
+          display: inline-flex;
+          vertical-align: top;
+          cursor: pointer;
+          color: #777;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          position: relative;
+          .fa{
+            position: absolute;
+            left: 20px;
+            font-size: 35px;
+          }
+        }
+        .connectUs__formFileLabelInfo{
+          display: inline-flex;
+          vertical-align: middle;
+          height: 50px;
+          align-items: center;
+          margin-right: 40px;
+        }
+      }
+    }
+    .connectUs__formBottom{
+      .connectUs__formCheckboxLable{
+        width: 25px;
+        height: 25px;
+        float: left;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .connectUs__formCheckbox:checked + .connectUs__formCheckboxOuter::before {
+          content: "\F00c";
+          display: flex;
+          height: 25px;
+          width: 25px;
+          margin: 0;
+          padding: 0;
+          justify-content: center;
+          align-items: center;
+        }
+        .connectUs__formCheckbox{
+          display: none;
+        }
+        .connectUs__formCheckboxOuter{
+          width: 25px;
+          height: 25px;
+          background-color: #fff;
+          display: flex;
+          position: relative;
+          color: #0071bc;
+        }
+      }
+      .connectUs__formBottomText{
+        display: block;
+        margin-left: 35px;
+        text-align: justify;
+        .connectUs__formCheckboxSpanLable{
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
