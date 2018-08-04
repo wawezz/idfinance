@@ -114,6 +114,7 @@
     font-weight: 400;
     font-size: 24px;
     color: #333;
+    width: 90%;
     .nextEvent__title{
       font-size: 30px;
       font-weight: 200;
@@ -197,3 +198,38 @@
         }
     }
 }
+
+.topBanner{
+    position: relative;
+    .topBanner__overlay{
+      width: calc(100% - 30px);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 15px;
+      background-color: #000;
+      opacity: .62;
+    }
+    .topBanner__textOverlay{
+      width: calc(100% - 30px);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .topBanner__textWrapper{
+        width: 950px;
+        color: #fff;
+        .topBanner__title{
+          font-weight: 200;        
+          font-size: 48px;
+        }
+        .topBanner__text{
+          font-weight: 600;
+          font-size: 24px;
+        }
+      }
+    }
+  }

@@ -1,34 +1,41 @@
-.topBanner{
-  position: relative;
-  .topBanner__overlay{
-    width: calc(100% - 30px);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 15px;
-    background-color: #000;
-    opacity: .62;
+.investorsBlocks{
+  padding: 30px 0;
+  .investorsBlocks__item{
+    .investorsBlocks__image{
+      margin: 0 auto;
+      display: block;
+    }
+    .investorsBlocks__title{
+      margin-top: 35px;
+      color: #0071bc;
+      font-size: 30px;
+      font-weight: 200;
+    }
+    .investorsBlocks__conten{
+      color: #333;
+      font-weight: 400;
+      font-size: 16px;
+      margin-top: 15px;
+    }
   }
-  .topBanner__textOverlay{
-    width: calc(100% - 30px);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 15px;
+}
+
+.blocks__listing{
+  .blocks__listingItem{
+    margin-bottom: 35px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .topBanner__textWrapper{
-      width: 950px;
-      color: #fff;
-      .topBanner__title{
-        font-weight: 200;        
-        font-size: 48px;
-      }
-      .topBanner__text{
-        font-weight: 600;
-        font-size: 24px;
-      }
+    .blocks__listingItemInfo{
+      color: #9a9a9a;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .blocks__listingItem-pdf{
+    &:before{
+      font-size: 37px;
+      color: #0071bc;
+      margin-right: 15px;
     }
   }
 }

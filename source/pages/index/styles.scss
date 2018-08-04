@@ -1,37 +1,3 @@
-.topBanner{
-  position: relative;
-  .topBanner__overlay{
-    width: calc(100% - 30px);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 15px;
-    background-color: #000;
-    opacity: .62;
-  }
-  .topBanner__textOverlay{
-    width: calc(100% - 30px);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .topBanner__textWrapper{
-      width: 950px;
-      color: #fff;
-      .topBanner__title{
-        font-weight: 200;        
-        font-size: 48px;
-      }
-      .topBanner__text{
-        font-weight: 600;
-        font-size: 24px;
-      }
-    }
-  }
-}
 
 .mainPartners{
   margin: 76px auto 55px auto; 
