@@ -17,6 +17,85 @@ block main
                 a(href="#").topBanner__button Find Your Role
     .main.container.custom-container
         .main__wrapper
+            h2.title Careers
+            .orientedWrapper
+                .careersListBlock
+                    ul.careersListBlock__list
+                        li.careersListBlock__listItem
+                            .careersListBlock__listInfo
+                                .careersListBlock__listInfoTitle Tax Analyst
+                                .careersListBlock__listInfoBottom
+                                    .careersListBlock__listInfoPsition Experienced
+                                    .careersListBlock__listInfoPlace #[i.fa.fa-map-marker] Peru
+                            a(href="#").careersListBlock__listButton Apply Now
+                        li.careersListBlock__listItem
+                            .careersListBlock__listInfo
+                                .careersListBlock__listInfoTitle Manufacturing Production & Assembly
+                                .careersListBlock__listInfoBottom
+                                    .careersListBlock__listInfoPsition Entry-Level
+                                    .careersListBlock__listInfoPlace #[i.fa.fa-map-marker] Brazil, Selvador
+                            a(href="#").careersListBlock__listButton Apply Now 
+                        li.careersListBlock__listItem
+                            .careersListBlock__listInfo
+                                .careersListBlock__listInfoTitle Sourcing Specialist - Buying / Procurment
+                                .careersListBlock__listInfoBottom
+                                    .careersListBlock__listInfoPsition Entry-Level
+                                    .careersListBlock__listInfoPlace #[i.fa.fa-map-marker] Brazil, Rio de Janeiro
+                            a(href="#").careersListBlock__listButton Apply Now
+                        li.careersListBlock__listItem
+                            .careersListBlock__listInfo
+                                .careersListBlock__listInfoTitle Graduate Engineering Training Progran - GETP (LEAD)
+                                .careersListBlock__listInfoBottom
+                                    .careersListBlock__listInfoPsition Leadership Programs
+                                    .careersListBlock__listInfoPlace #[i.fa.fa-map-marker] Brazil, Rio de Janeiro
+                            a(href="#").careersListBlock__listButton Apply Now
+                        li.careersListBlock__listItem
+                            .careersListBlock__listInfo
+                                .careersListBlock__listInfoTitle Intern - Legal Fuction
+                                .careersListBlock__listInfoBottom
+                                    .careersListBlock__listInfoPsition Co-op/Intern
+                                    .careersListBlock__listInfoPlace #[i.fa.fa-map-marker] Colombia, Bogota
+                            a(href="#").careersListBlock__listButton Apply Now  
+                    .careersListBlock__navigation                                                                                            
+                        a(href="#").careersListBlock__navigationButton Back
+                        ul.careersListBlock__navigationPages
+                            li.careersListBlock__navigationNumber.active
+                                .careersListBlock__navigationLink 1
+                            li.careersListBlock__navigationNumber
+                                a(href="#").careersListBlock__navigationLink 2
+                            li.careersListBlock__navigationNumber
+                                a(href="#").careersListBlock__navigationLink 3 
+                            li.careersListBlock__navigationNumber
+                                a(href="#").careersListBlock__navigationLink 4
+                            li.careersListBlock__navigationNumber
+                                a(href="#").careersListBlock__navigationLink 5                                                                                                                   
+                            li.careersListBlock__navigationNumber
+                                a(href="#").careersListBlock__navigationLink 6
+                            li.careersListBlock__navigationNumber
+                                a(href="#").careersListBlock__navigationLink 7
+                            li.careersListBlock__navigationNumber
+                                .careersListBlock__navigationLink ...
+                            li.careersListBlock__navigationNumber
+                                a(href="#").careersListBlock__navigationLink 12                                                                                              
+                        a(href="#").careersListBlock__navigationButton.active Next
+                .careersSearchBlock
+                    .careersSearchBlock__title Search for a Job
+                    form.careersSearchBlock__form
+                        .careersSearchBlock__row
+                            i.fa.fa-map-marker
+                            select.careersSearchBlock__formSelect 
+                                option(disabled selected value="").careersSearchBlock__formOption Location
+                                option(value="peru").careersSearchBlock__formOption Peru
+                        .careersSearchBlock__row
+                            select.careersSearchBlock__formSelect
+                                option(disabled selected value="").careersSearchBlock__formOption Job Function
+                                option(value="peru").careersSearchBlock__formOption Leadership Programs
+                        .careersSearchBlock__row
+                            select.careersSearchBlock__formSelect
+                                option(disabled selected value="").careersSearchBlock__formOption Experience
+                                option(value="peru").careersSearchBlock__formOption Entry-Level  
+                        input(value="Show my jobs" type="submit" name="jobsSubmit").careersSearchBlock__submit
+                        input(value="X  Clear Filters" type="reset" name="jobsRest").careersSearchBlock__reset
     .connectUs
         .connectUs__wrapper.container.custom-container
             .connectUs__title Connect With Us
@@ -32,7 +111,7 @@ block main
                                 i.fa.fa-file-o
                                 | Resume
                             .connectUs__formFileLabelInfo.fileSetter Файл не выбран
-                    input(value="Join" type="submit" name="contactsubmit").connectUs__formSubmit
+                    input(value="Join" type="submit" name="contactSubmit").connectUs__formSubmit
                 .connectUs__formBottom
                     label(for="agreement").connectUs__formCheckboxLable
                         input(type="checkbox" id="agreement" name="agreement").connectUs__formCheckbox

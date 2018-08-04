@@ -106,6 +106,13 @@
 .main{
     .main__wrapper{
       padding: 30px 0;
+      .title{
+          color: #0071bc;
+          font-weight: 200;
+          font-size: 30px;
+          text-align: center;
+          margin-bottom: 50px;
+      }
     }
 }
 
