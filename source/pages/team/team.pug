@@ -4,17 +4,16 @@ block title
 block main
     .topSecondaryBar
         ul.topSecondaryBar__menu.container.custom-container
-            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink.active Careers]
-            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Our principles]
-            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Press about us]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Financial Results]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink.active Corporate Governance]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Events]
     .topBanner.container
-        img(src=require("./images/careerTop.jpg"))
+        img(src=require("./images/teamTop.jpg"))
         .topBanner__overlay
         .topBanner__textOverlay
             .topBanner__textWrapper
                 h1.topBanner__title Become part of out team!
                 h3.topBanner__text Find your purpose and build relationships#[br]with a ID Finance
-                a(href="#").topBanner__button Find Your Role
     .main.container.custom-container
         .main__wrapper
     .connectUs
@@ -24,14 +23,8 @@ block main
             form.connectUs__form
                 .connectUs__formRow
                     .connectUs__formRowsWrapper
-                        input(placeholder="Name" value="" type="text" name="contactName").connectUs__formInput
-                        input(placeholder="Email" value="" type="email" name="contactEmail").connectUs__formInput
-                        input(type="file" id="contactFile" name="contactFile").fileGetter.connectUs__formFile
-                        label(for="contactFile").connectUs__formFileLabel 
-                            .connectUs__formFileLabelButton 
-                                i.fa.fa-file-o
-                                | Resume
-                            .connectUs__formFileLabelInfo.fileSetter Файл не выбран
+                        input(placeholder="Name" value="" type="text" name="contactName").connectUs__formInput.connectUs__formInput-large
+                        input(placeholder="Email" value="" type="email" name="contactEmail").connectUs__formInput.connectUs__formInput-large
                     input(value="Join" type="submit" name="contactsubmit").connectUs__formSubmit
                 .connectUs__formBottom
                     label(for="agreement").connectUs__formCheckboxLable
@@ -47,4 +40,4 @@ block main
                         p ID Finance is a fast-growing data science, credit scoring and digital finance company that is pioneering fintech innovation in emerging markets. ID Finance uses its proprietary IT infrastructure and risk management capabilities to develop innovative financial solutions. ID Finance brings financial innovations into emerging markets.
                         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel malesuada lorem, non accumsan lectus. Aenean eget velit ligula. Integer pretium egestas sem, vitae rhoncus urna viverra at.
                 .infoBlock__imageWrapper
-                    img.infoBlock__image(src=require("./images/whyImg.jpg"))
+                    img.infoBlock__image(src=require("./images/teamImg.jpg"))
