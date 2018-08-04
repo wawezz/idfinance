@@ -1,0 +1,27 @@
+.teamBlock{
+    display: flex;
+    flex-wrap:wrap;
+    .teamBlock__item{
+        display: inline-block;
+        flex-grow: 1;
+        width: calc(25% - 30px);
+        margin: 30px 15px;
+        text-align: center;
+        .teamBlock__img{
+            border-radius: 50%;
+            margin-bottom: 35px;
+        }
+        .teamBlock__name{
+            font-weight: 700;
+            font-size: 20px;
+            color: #0071bc;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+        .teamBlock__position{
+            font-weight: 400;
+            font-size: 20px;
+            color: #333;
+        }
+    }
+}
