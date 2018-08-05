@@ -1,0 +1,76 @@
+extends ../../components/base/base
+block title
+    | Principles page
+block main
+    .topSecondaryBar
+        ul.topSecondaryBar__menu.container.custom-container
+            li.topSecondaryBar__menuItem #[a(href="career.html").topSecondaryBar__menuLink Careers]
+            li.topSecondaryBar__menuItem #[a(href="principles.html").topSecondaryBar__menuLink.active Our principles]
+            li.topSecondaryBar__menuItem #[a(href="press.html").topSecondaryBar__menuLink Press about us]
+    .topBanner.container
+        img(src=require("./images/teamTop.jpg"))
+        .topBanner__overlay
+        .topBanner__textOverlay
+            .topBanner__textWrapper
+                h1.topBanner__title Become part of out team!
+                h3.topBanner__text Find your purpose and build relationships#[br]with a ID Finance
+    .main.container.custom-container
+        .main__wrapper
+            .teamBlock
+                .teamBlock__item
+                    img(src=require("./images/team1.jpg")).teamBlock__img
+                    .teamBlock__name Boris Batine
+                    .teamBlock__position CEO, founder 
+                .teamBlock__item
+                    img(src=require("./images/team2.jpg")).teamBlock__img
+                    .teamBlock__name Alexander Dunaev
+                    .teamBlock__position COO, founder  
+                .teamBlock__item
+                    img(src=require("./images/team3.jpg")).teamBlock__img
+                    .teamBlock__name Kieran Donnely
+                    .teamBlock__position Board Member 
+                .teamBlock__item
+                    img(src=require("./images/team4.jpg")).teamBlock__img
+                    .teamBlock__name Ekatetina Kazak
+                    .teamBlock__position CRO                                                        
+                .teamBlock__item
+                    img(src=require("./images/team5.jpg")).teamBlock__img
+                    .teamBlock__name Javier Lopez
+                    .teamBlock__position CFO 
+                .teamBlock__item
+                    img(src=require("./images/team6.jpg")).teamBlock__img
+                    .teamBlock__name Alessandro Ceschel
+                    .teamBlock__position CMO 
+                .teamBlock__item
+                    img(src=require("./images/team7.jpg")).teamBlock__img
+                    .teamBlock__name Pavel Shareiko
+                    .teamBlock__position CTO
+                .teamBlock__item
+                    img(src=require("./images/team8.jpg")).teamBlock__img
+                    .teamBlock__name Rosa Modergo
+                    .teamBlock__position Head of Legal #[br]and Compliance           
+    .connectUs
+        .connectUs__wrapper.container.custom-container
+            .connectUs__title Connect With Us
+            .connectUs__text Stay up to date on ID Finance and possible oppurtunities that open in areas that interest you.
+            form.connectUs__form
+                .connectUs__formRow
+                    .connectUs__formRowsWrapper
+                        input(placeholder="Name" value="" type="text" name="contactName").connectUs__formInput.connectUs__formInput-large
+                        input(placeholder="Email" value="" type="email" name="contactEmail").connectUs__formInput.connectUs__formInput-large
+                    input(value="Join" type="submit" name="contactsubmit").connectUs__formSubmit
+                .connectUs__formBottom
+                    label(for="agreement").connectUs__formCheckboxLable
+                        input(type="checkbox" id="agreement" name="agreement").connectUs__formCheckbox
+                        span.connectUs__formCheckboxOuter.fa
+                    .connectUs__formBottomText #[span.connectUs__formCheckboxSpanLable I Consent.] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius malesuada convallis. Phasellus pellentesque, mi id consectetur cursus, sapien lorem laoreet velit, vulputate molestie risus quam eu est.
+    .main.container.custom-container
+        .main__wrapper                 
+            .infoBlock.infoBlock-m4
+                .infoBlock__data
+                    .infoBlock__title Why work for us?
+                    .infoBlock__text
+                        p ID Finance is a fast-growing data science, credit scoring and digital finance company that is pioneering fintech innovation in emerging markets. ID Finance uses its proprietary IT infrastructure and risk management capabilities to develop innovative financial solutions. ID Finance brings financial innovations into emerging markets.
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel malesuada lorem, non accumsan lectus. Aenean eget velit ligula. Integer pretium egestas sem, vitae rhoncus urna viverra at.
+                .infoBlock__imageWrapper
+                    img.infoBlock__image(src=require("./images/teamImg.jpg"))

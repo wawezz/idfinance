@@ -1,0 +1,17 @@
+.pressBlock{
+    display: flex;
+    flex-wrap:wrap;
+    .pressBlock__item{
+        display: flex;
+        flex-grow: 1;
+        width: calc(25% - 40px);
+        text-align: center;
+        height: 160px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        .pressBlock__img{
+            width: initial;
+        }
+    }
+}

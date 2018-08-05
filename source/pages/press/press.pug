@@ -1,0 +1,39 @@
+extends ../../components/base/base
+block title
+    | Press page
+block main
+    .topSecondaryBar
+        ul.topSecondaryBar__menu.container.custom-container
+            li.topSecondaryBar__menuItem #[a(href="career.html").topSecondaryBar__menuLink Careers]
+            li.topSecondaryBar__menuItem #[a(href="principles.html").topSecondaryBar__menuLink Our principles]
+            li.topSecondaryBar__menuItem #[a(href="press.html").topSecondaryBar__menuLink.active Press about us]
+    .topBanner.container
+        img(src=require("./images/pressTop.jpg"))
+        .topBanner__overlay
+        .topBanner__textOverlay
+            .topBanner__textWrapper
+                h1.topBanner__title ID Finance is lorem ipsum #[br] dolor sit amet
+                a(href="#").topBanner__button Связаться с пресс службой
+    .main.container.custom-container
+        .main__wrapper
+            .pressBlock
+                a(href="").pressBlock__item
+                    img(src=require("./images/press1.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press2.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press3.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press4.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press5.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press6.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press7.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press8.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press9.png")).pressBlock__img
+                a(href="").pressBlock__item
+                    img(src=require("./images/press10.png")).pressBlock__img
