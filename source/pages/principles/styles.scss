@@ -1,28 +1,55 @@
-.teamBlock{
-    display: flex;
-    flex-wrap:wrap;
-    .teamBlock__item{
-        display: inline-block;
-        flex-grow: 1;
-        width: calc(25% - 30px);
-        margin: 30px 15px;
-        text-align: center;
-        .teamBlock__img{
-            border-radius: 50%;
-            margin-bottom: 35px;
-            width: 167px;
+.accordionBlock{
+    max-width: 930px;
+    margin: 40px auto;
+    width: 90%;
+    box-shadow: 0px 0px 10px -1px #777;
+    .accordionBlock__itemHeader{
+        border-bottom: 1px solid #dedede;
+        &:last-child{
+            border-bottom: none;
         }
-        .teamBlock__name{
-            font-weight: 700;
-            font-size: 20px;
+        .accordionBlock__itemHeaderButton{
+            width: 100%;
+            text-align: left;
+            height: 70px;
+            padding: 0 80px 0 40px;
+            margin: 0;        
+            font-size: 30px;
+            font-weight: 200;
             color: #0071bc;
-            line-height: 1;
-            text-transform: uppercase;
-        }
-        .teamBlock__position{
-            font-weight: 400;
-            font-size: 20px;
-            color: #333;
+            text-decoration: none;
+            &:after{
+                content: "\25b2";
+                font-size: 30px;
+                display: inline-block;
+                float: right;
+                color: #333;
+            }
+            &.collapsed:after{
+                content: "\25bc";
+            }
+        }        
+    }
+    .accordionBlock__itemBody{
+        background-color: #eee;
+        border-bottom: 1px solid #dedede;
+        padding: 20px 40px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #333;
+        .accordionBlock__listing{
+            margin: 0;
+            .accordionBlock__listingItem{
+                &::before{
+                    content: "\2022"; 
+                    color: #0071bc;
+                    font-size: 27px;
+                    margin-right: 10px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 1.2;
+                }
+            }
         }
     }
 }

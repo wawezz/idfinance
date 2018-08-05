@@ -8,69 +8,44 @@ block main
             li.topSecondaryBar__menuItem #[a(href="principles.html").topSecondaryBar__menuLink.active Our principles]
             li.topSecondaryBar__menuItem #[a(href="press.html").topSecondaryBar__menuLink Press about us]
     .topBanner.container
-        img(src=require("./images/teamTop.jpg"))
+        img(src=require("./images/principlesTop.jpg"))
         .topBanner__overlay
         .topBanner__textOverlay
             .topBanner__textWrapper
-                h1.topBanner__title Become part of out team!
-                h3.topBanner__text Find your purpose and build relationships#[br]with a ID Finance
+                h1.topBanner__title Lorem ipsum lorem ipsum!
+                h3.topBanner__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.#[br]Morbi viverra elementum suscipit.
     .main.container.custom-container
         .main__wrapper
-            .teamBlock
-                .teamBlock__item
-                    img(src=require("./images/team1.jpg")).teamBlock__img
-                    .teamBlock__name Boris Batine
-                    .teamBlock__position CEO, founder 
-                .teamBlock__item
-                    img(src=require("./images/team2.jpg")).teamBlock__img
-                    .teamBlock__name Alexander Dunaev
-                    .teamBlock__position COO, founder  
-                .teamBlock__item
-                    img(src=require("./images/team3.jpg")).teamBlock__img
-                    .teamBlock__name Kieran Donnely
-                    .teamBlock__position Board Member 
-                .teamBlock__item
-                    img(src=require("./images/team4.jpg")).teamBlock__img
-                    .teamBlock__name Ekatetina Kazak
-                    .teamBlock__position CRO                                                        
-                .teamBlock__item
-                    img(src=require("./images/team5.jpg")).teamBlock__img
-                    .teamBlock__name Javier Lopez
-                    .teamBlock__position CFO 
-                .teamBlock__item
-                    img(src=require("./images/team6.jpg")).teamBlock__img
-                    .teamBlock__name Alessandro Ceschel
-                    .teamBlock__position CMO 
-                .teamBlock__item
-                    img(src=require("./images/team7.jpg")).teamBlock__img
-                    .teamBlock__name Pavel Shareiko
-                    .teamBlock__position CTO
-                .teamBlock__item
-                    img(src=require("./images/team8.jpg")).teamBlock__img
-                    .teamBlock__name Rosa Modergo
-                    .teamBlock__position Head of Legal #[br]and Compliance           
-    .connectUs
-        .connectUs__wrapper.container.custom-container
-            .connectUs__title Connect With Us
-            .connectUs__text Stay up to date on ID Finance and possible oppurtunities that open in areas that interest you.
-            form.connectUs__form
-                .connectUs__formRow
-                    .connectUs__formRowsWrapper
-                        input(placeholder="Name" value="" type="text" name="contactName").connectUs__formInput.connectUs__formInput-large
-                        input(placeholder="Email" value="" type="email" name="contactEmail").connectUs__formInput.connectUs__formInput-large
-                    input(value="Join" type="submit" name="contactsubmit").connectUs__formSubmit
-                .connectUs__formBottom
-                    label(for="agreement").connectUs__formCheckboxLable
-                        input(type="checkbox" id="agreement" name="agreement").connectUs__formCheckbox
-                        span.connectUs__formCheckboxOuter.fa
-                    .connectUs__formBottomText #[span.connectUs__formCheckboxSpanLable I Consent.] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius malesuada convallis. Phasellus pellentesque, mi id consectetur cursus, sapien lorem laoreet velit, vulputate molestie risus quam eu est.
-    .main.container.custom-container
-        .main__wrapper                 
-            .infoBlock.infoBlock-m4
-                .infoBlock__data
-                    .infoBlock__title Why work for us?
-                    .infoBlock__text
-                        p ID Finance is a fast-growing data science, credit scoring and digital finance company that is pioneering fintech innovation in emerging markets. ID Finance uses its proprietary IT infrastructure and risk management capabilities to develop innovative financial solutions. ID Finance brings financial innovations into emerging markets.
-                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel malesuada lorem, non accumsan lectus. Aenean eget velit ligula. Integer pretium egestas sem, vitae rhoncus urna viverra at.
-                .infoBlock__imageWrapper
-                    img.infoBlock__image(src=require("./images/teamImg.jpg"))
+            #accordion.accordionBlock
+                .card.accordionBlock__item
+                    .card-header.accordionBlock__itemHeader#headingOne
+                        h5.mb-0
+                            button.btn.btn-link.accordionBlock__itemHeaderButton(data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                                | Strategy
+                    #collapseOne.collapse.show(aria-labelledby="headingOne" data-parent="#accordion")
+                        .card-body.accordionBlock__itemBody 
+                            ul.accordionBlock__listing
+                                li.accordionBlock__listingItem Understand and articulate the strategy
+                                li.accordionBlock__listingItem Prioritize according the strategy
+                                li.accordionBlock__listingItem Think critically
+                .card.accordionBlock__item
+                    .card-header.accordionBlock__itemHeader#headingTwo
+                        h5.mb-0
+                            button.btn.btn-link.accordionBlock__itemHeaderButton.collapsed(data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo")
+                                | Execution
+                    #collapseTwo.collapse(aria-labelledby="headingTwo" data-parent="#accordion")
+                        .card-body.accordionBlock__itemBody Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                .card.accordionBlock__item
+                    .card-header.accordionBlock__itemHeader#headingThree
+                        h5.mb-0
+                            button.btn.btn-link.accordionBlock__itemHeaderButton.collapsed(data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree")
+                                | Team
+                    #collapseThree.collapse(aria-labelledby="headingThree" data-parent="#accordion")
+                        .card-body.accordionBlock__itemBody Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                .card.accordionBlock__item
+                    .card-header.accordionBlock__itemHeader#headingFour
+                        h5.mb-0
+                            button.btn.btn-link.accordionBlock__itemHeaderButton.collapsed(data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour")
+                                | Lorem ispum
+                    #collapseFour.collapse(aria-labelledby="headingFour" data-parent="#accordion")
+                        .card-body.accordionBlock__itemBody Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
