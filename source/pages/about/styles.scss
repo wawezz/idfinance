@@ -1,8 +1,12 @@
-.postBlock{
+.aboutBlock{
     color: #333;
     font-size: 18px;
     font-weight: 400;
-    padding: 0 80px;
+    .aboutBlock__title{
+        color: #0071bc;
+        font-size: 30px;
+        font-weight: 200;
+    }
     p{
         margin-bottom: 1.5rem; 
     }
@@ -12,16 +16,6 @@
             text-decoration: none;
         }
     }
-    .postBlock__info{
-        font-size: 30px;
-        font-weight: 400;
-        color: #0071bc;
-        padding: 30px;
-        width: 100%;
-        border: 2px solid #0071bc;
-        line-height: 1.2;
-        margin: 2rem 0
-    }
     img.center{
         max-width: 100%;
         margin: 20px 0;
@@ -29,12 +23,15 @@
     }
     img.left{
         max-width: 50%;
-        margin-right: 20px;
+        margin: 0 20px;
         float: left;
     }
     img.right{
         max-width: 50%;
-        margin-left: 20px;
+        margin: 0 20px;
         float: right;
+    }
+    .aboutBlock__textBlock{
+        display: inline-block;
     }
 }

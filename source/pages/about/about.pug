@@ -1,0 +1,30 @@
+extends ../../components/base/base
+block title
+    | Post page
+block main
+    .topSecondaryBar
+        ul.topSecondaryBar__menu.container.custom-container
+            li.topSecondaryBar__menuItem #[a(href="career.html").topSecondaryBar__menuLink.active Careers]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Our principles]
+            li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Press about us]
+    .topBanner.container
+        img(src=require("./images/aboutTop.jpg"))
+        .topBanner__overlay
+        .topBanner__textOverlay
+            .topBanner__textWrapper
+                h1.topBanner__title ID Finance is lorem ispum#[br]dolor sit amet
+                h3.topBanner__text ID Finance is a fast-growing fintech company specializing in data science, credit scoring and digital finance in emerging and well-developed markets.
+    .main.container.custom-container
+        .main__wrapper
+            .aboutBlock
+                .aboutBlock__row
+                    .aboutBlock__textBlock
+                        img(src=require("./images/about1.jpg") class="right")
+                        p.aboutBlock__title About Us
+                        p Founded by Russian-born and UK-educated Boris Batine and Alexander Dunaev and headquartered in Barcelona, ID Finance is a fast growing data science, credit scoring and digital finance provider globally focused on emerging markets.
+                        p We are pioneering fintech innovation in seven countries across Europe, Asia and Latin America, have several geographies pipelined. The company has been recognised as a unicorn of tomorrow by London investment bank, GP Bullhound, has been also named by Financial Times as the second-fastest-growing fintech in Europe in its FT 1000 Europe listing. We have 5.3m registered clients, saw an 89% revenue growth in 2017.
+                .aboutBlock__textBlock
+                    img(src=require("./images/about2.jpg") class="left")                
+                    p We are leveraging the growth of mobile internet and availability of data to provide access to competitive and transparent financial services, and address the massive structural demand unmet by incumbents.
+                    p Data science is improving the quality, precision and speed of operations to deliver more competitive and convenient financial services. We’re applying ML and AI across our business, from reviewing clients to optimising digital marketing campaigns and providing efficient customer service
+                    p Together with our partners, we have built the digital finance infrastructure for fintech services in several countries in less than five years. We can now reach profitability within a year of launching into a new territory.
