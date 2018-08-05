@@ -1,0 +1,82 @@
+extends ../../components/base/base
+block title
+    | News page
+block main
+    .topBanner.container
+        img(src=require("./images/newsTop.jpg"))
+        .topBanner__overlay
+        .topBanner__textOverlay
+            .topBanner__textWrapper
+                h1.topBanner__title Подпишитесь#[br]на наши новости.
+                form.topBanner__form
+                    input(type="email" placeholder="Email" value="").topBanner__input
+                    input(type="submit" value="Подписаться").topBanner__submit
+    .main.container.custom-container
+        .main__wrapper
+            h2.title News
+            .newsBlock
+                .newsBlock__list
+                    .newsBlock__item
+                        img(src=require("./images/news1.jpg")).newsBlock__image
+                        .newsBlock__info
+                            .newsBlock__title Lorem ispum dolor sit amet, consectur adipising elit.
+                            .newsBlock__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel malesuada lorem, non accumsan lectus. Aenean eget velit ligula. Integer pretium egestas sem, vitae rhoncus urna viverra at.
+                            a(href="#").newsBlock__more More...
+                            .newsBlock__buttom  
+                                .newsBlock__date
+                                    i.fa.fa-calendar 
+                                    | 27.06.2018
+                                .newsBlock__watch
+                                    i.fa.fa-eye 
+                                    | 6 582
+                    .newsBlock__item
+                        img(src=require("./images/news2.jpg")).newsBlock__image
+                        .newsBlock__info
+                            .newsBlock__title Lorem ispum dolor sit amet, consectur adipising elit.
+                            .newsBlock__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel malesuada lorem, non accumsan lectus. Aenean eget velit ligula. Integer pretium egestas sem, vitae rhoncus urna viverra at.
+                            a(href="#").newsBlock__more More...
+                            .newsBlock__buttom  
+                                .newsBlock__date
+                                    i.fa.fa-calendar 
+                                    | 27.06.2018
+                                .newsBlock__watch
+                                    i.fa.fa-eye 
+                                    | 6 582
+                    .newsBlock__item
+                        img(src=require("./images/news3.jpg")).newsBlock__image
+                        .newsBlock__info
+                            .newsBlock__title Lorem ispum dolor sit amet, consectur adipising elit.
+                            .newsBlock__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel malesuada lorem, non accumsan lectus. Aenean eget velit ligula. Integer pretium egestas sem, vitae rhoncus urna viverra at.
+                            a(href="#").newsBlock__more More...
+                            .newsBlock__buttom  
+                                .newsBlock__date
+                                    i.fa.fa-calendar 
+                                    | 27.06.2018
+                                .newsBlock__watch
+                                    i.fa.fa-eye 
+                                    | 6 582                
+                .newsBlock__navigation                                                                                            
+                    a(href="#").newsBlock__navigationButton Back
+                    ul.newsBlock__navigationPages
+                        li.newsBlock__navigationNumber.active
+                            .newsBlock__navigationLink 1
+                        li.newsBlock__navigationNumber
+                            a(href="#").newsBlock__navigationLink 2
+                        li.newsBlock__navigationNumber
+                            a(href="#").newsBlock__navigationLink 3 
+                        li.newsBlock__navigationNumber
+                            a(href="#").newsBlock__navigationLink 4
+                        li.newsBlock__navigationNumber
+                            a(href="#").newsBlock__navigationLink 5                                                                                                                   
+                        li.newsBlock__navigationNumber
+                            a(href="#").newsBlock__navigationLink 6
+                        li.newsBlock__navigationNumber
+                            a(href="#").newsBlock__navigationLink 7
+                        li.newsBlock__navigationNumber
+                            .newsBlock__navigationLink ...
+                        li.newsBlock__navigationNumber
+                            a(href="#").newsBlock__navigationLink 12                                                                                              
+                    a(href="#").newsBlock__navigationButton.active Next
+            .tweetsBlock
+                a(class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw") National Park Tweets - Curated tweets by TwitterDev
+                script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")

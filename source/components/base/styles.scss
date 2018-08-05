@@ -258,7 +258,33 @@
             text-align: center;
             border-radius: 5px;
         }
+        .topBanner__form{
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            .topBanner__input{
+                width: 410px;
+                height: 70px;
+                color: #333;
+                border-radius: 5px;
+                padding: 25px 35px;
+                margin-right: 5px;
+            }
+            .topBanner__submit{
+                height: 70px;
+                width: 280px;
+                color: #fff;
+                background-color: #0071bc;
+                border-radius: 5px;
+                padding: 25px 35px;
+                cursor: pointer;
+            }
+        }
       }
+    }
+    img{
+        width: 100%;
     }
   }
 

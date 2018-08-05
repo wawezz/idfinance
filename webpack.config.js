@@ -23,7 +23,9 @@ const common = merge([
             'team': PATHS.source + '/pages/team/team.js',
             'events': PATHS.source + '/pages/events/events.js',
             'contacts': PATHS.source + '/pages/contacts/contacts.js',
-            'career': PATHS.source + '/pages/career/career.js'
+            'career': PATHS.source + '/pages/career/career.js',
+            'news': PATHS.source + '/pages/news/news.js',
+            'post': PATHS.source + '/pages/post/post.js'
         },
         output: {
             path: PATHS.build,
@@ -59,6 +61,16 @@ const common = merge([
                 filename: 'contacts.html',
                 chunks: ['contacts', 'common'],
                 template: PATHS.source + '/pages/contacts/contacts.pug'
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'news.html',
+                chunks: ['news', 'common'],
+                template: PATHS.source + '/pages/news/news.pug'
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'post.html',
+                chunks: ['post', 'common'],
+                template: PATHS.source + '/pages/post/post.pug'
             }),
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'common',

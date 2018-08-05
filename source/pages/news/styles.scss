@@ -1,0 +1,96 @@
+.tweetsBlock{
+    width: 90%;
+    max-width: 700px;
+    margin: 80px auto 0 auto;
+}
+.newsBlock{
+    padding: 0 95px;
+    .newsBlock__list{
+        .newsBlock__item{
+            margin-bottom: 33px;
+            display: flex;
+            min-height: 180px;
+            .newsBlock__image{
+                width: 28%;
+                margin-right: 35px;
+            }
+            .newsBlock__info{
+                .newsBlock__title{
+                    color: #0071bc;
+                    font-size: 24px;
+                    font-weight: 200;
+                    margin-bottom: 20px;
+                }
+                .newsBlock__text{
+                    color: #333;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                .newsBlock__more{
+                    color: #0071bc;
+                    margin: 20px 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: inline-block;
+                    text-decoration: underline;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                .newsBlock__buttom{
+                    color: #777;
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    .fa{
+                        margin-right: 10px;
+                    }
+                    .newsBlock__date{
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .newsBlock__navigation{
+        font-size: 18px;
+        font-weight: 400;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        margin: 90px auto 0 auto;
+        .newsBlock__navigationButton{
+        color: #777;
+        cursor: not-allowed;
+        &.active{
+            color: #333;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        &:hover{
+            text-decoration: none;
+        }
+        }
+        .newsBlock__navigationPages{
+        display: inline-flex;
+        margin: 0 20px;
+        .newsBlock__navigationNumber{
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            .newsBlock__navigationLink{
+            color: #333;
+            }
+            &.active{
+            background-color: #0071bc;
+            color: #fff;
+            .newsBlock__navigationLink{
+                color: #fff;
+            }
+            }
+        }
+        }
+    }
+}
