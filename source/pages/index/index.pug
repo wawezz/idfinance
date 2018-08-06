@@ -9,7 +9,7 @@ block main
             .topBanner__textWrapper
                 h1.topBanner__title Data Science. Credit Scoring.#[br]Digital Finance
                 h3.topBanner__text ID Finance is a fast-growing fintech company specializing in data science, credit scoring and digital finance in emerging and well-developed markets.
-    .main.container.custom-container
+    .main.container.custom-container.custom-fluid-container
         .main__wrapper
             .infoBlock
                 .infoBlock__data
@@ -20,28 +20,28 @@ block main
                 .infoBlock__imageWrapper
                     img.infoBlock__image(src=require("./images/index_1.jpg"))
             .infoBlock
-                .infoBlock__imageWrapper
-                    img.infoBlock__image(src=require("./images/index_2.jpg"))
                 .infoBlock__data
                     .infoBlock__title Products и Технологии
                     .infoBlock__text
                         p Our proprietary and fully automated scoring technology uses data science and machine learning to determine financial condition of the client to offer him the right product and convenient service at the right moment of his life.
                         p We offer a variety of financial products ranging from credit history reports, to loans, insurances and POS installment service. We process 100% of our operations in real time and have one of the best performing risk management systems in the industry thanks to our advanced data science capabilities. While we are growing aggressively, we also practice responsible approach to financials, paying special attention to customer care, security and personal data protection. We fully comply with all regulatory clauses of national authorities.
                         p There are several technologies and software engines developed by our talented team.
+                .infoBlock__imageWrapper
+                    img.infoBlock__image(src=require("./images/index_2.jpg"))
             .mainPartners.row
-                .mainPartners__item.col-3
+                .mainPartners__item.col-6.col-md-3
                     .mainPartners__logoWrapper
                         img.mainPartners__logo(src=require("./images/ft-logo.png"))
                     .mainPartners__title TOP 2 FASTEST-GROWING FINTECH COMPANY IN EUROPE
-                .mainPartners__item.col-3
+                .mainPartners__item.col-6.col-md-3
                     .mainPartners__logoWrapper
                         img.mainPartners__logo(src=require("./images/inc-logo.png"))
                     .mainPartners__title TOP 50 FASTEST-GROWING PRIVATE EUROPEAN COMPANIES
-                .mainPartners__item.col-3
+                .mainPartners__item.col-6.col-md-3
                     .mainPartners__logoWrapper
                         img.mainPartners__logo(src=require("./images/silicon-logo.png"))
                     .mainPartners__title TOP 20 EUROPEAN FINTECH START-UPS
-                .mainPartners__item.col-3
+                .mainPartners__item.col-6.col-md-3
                     .mainPartners__logoWrapper
                         img.mainPartners__logo(src=require("./images/benzinga-logo.png"))
                     .mainPartners__title BEST EMERGING MARKET SOLUTION CATEGORY FINALIST

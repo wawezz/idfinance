@@ -50,3 +50,10 @@ button {
 li{
   list-style: none;
 }
+
+html{
+  min-width: 360px;
+  @include media-breakpoint-down(md) {
+    font-size: 13px;
+  }
+}

@@ -10,7 +10,7 @@ html
             
             header
                 .topBar
-                    ul.topBar__wrapper.container.custom-container
+                    ul.topBar__wrapper.container.custom-fluid-container
                         li.topBar__item BRL   #[span.topBar__item-bold 0.27] #[i.fa.fa-caret-down]
                         li.topBar__item EUR   #[span.topBar__item-bold 0.85] #[i.fa.fa-caret-down]
                         li.topBar__item ARS   #[span.topBar__item-bold 0.041196] #[i.fa.fa-caret-up]
@@ -20,23 +20,24 @@ html
                     a(href="index.html").header__logo.d-none.d-lg-block
                         img(src=require("./images/logo.png")).header__logoImg
                     .header__nav
-                        ul.header__menu
+                        ul.header__menu.d-none.d-sm-inline-flex
                             li.header__menuItem #[a(href="about.html").header__menuLink About us]
                             li.header__menuItem #[a(href="products.html").header__menuLink Products]
                             li.header__menuItem #[a(href="investors.html").header__menuLink Investors]
                             li.header__menuItem #[a(href="contacts.html").header__menuLink Contacts]
                             li.header__menuItem #[a(href="news.html").header__menuLink News]
-                        a(href="#").header__search
-                            img(src=require("./images/search.png"))
-                        ul.header__langs
-                            li.header__langsItem 
-                                a(href="#").header__langsLink
-                                    img(src=require("./images/us.png"))
-                                    | EN
-                            li.header__langsItem.active 
-                                a(href="#").header__langsLink
-                                    img(src=require("./images/es.png"))
-                                    | ES
+                        .header__menuWrapper
+                            a(href="#").header__search
+                                img(src=require("./images/search.png"))
+                            ul.header__langs
+                                li.header__langsItem 
+                                    a(href="#").header__langsLink
+                                        img(src=require("./images/us.png"))
+                                        | EN
+                                li.header__langsItem.active 
+                                    a(href="#").header__langsLink
+                                        img(src=require("./images/es.png"))
+                                        | ES
             block main
             footer.footer
                 .footer__wrapper.container.custom-container

@@ -1,22 +1,36 @@
+@import "../../common/styles/styles";
+
 .orientedWrapper{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include media-breakpoint-down(sm) {
+    flex-flow: wrap;
+  }
+
   .careersListBlock{
-    margin-bottom: 20px;
+    margin: 0 20px 20px 0;
+    max-width: 730px;
+    width: 100%;
+    @include media-breakpoint-down(sm) {
+      margin: 20px auto;
+    }
     .careersListBlock__list{
+      margin: 0;
       .careersListBlock__listItem{
-        width: 730px;
         background-color: #f1f1f1;
-        display: flex;
+        display: inline-flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 15px;
         margin-bottom: 20px;
         min-height: 120px;
+        width: 100%;
         .careersListBlock__listInfo{
           width: 360px;
           color: #333;
+          margin-right: 15px;
           .careersListBlock__listInfoTitle{
             font-weight: 700;
             font-size: 1.3rem;
@@ -89,9 +103,13 @@
     }
   }
   .careersSearchBlock{
-    width: 405px;
+    width: 100%;
     background-color: #0071bc;
     padding: 35px 25px;
+    max-width: 405px;
+    @include media-breakpoint-down(sm) {
+      margin: 20px auto;
+    }
     .careersSearchBlock__title{
       font-size: 1.6rem;
       font-weight: 400;
@@ -124,7 +142,8 @@
         font-weight: 400;
         font-size: 1.3rem;
         padding: 30px;
-        width: 276px;
+        max-width: 276px;
+        width: 90%;
         border: 2px #fff solid;
         border-radius: 5px;
         margin: 80px auto 35px auto;

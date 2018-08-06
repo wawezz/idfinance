@@ -1,9 +1,25 @@
 @import "../../common/styles/styles";
 
+.container.custom-container {
+    padding: 0 54px;
+  
+    @include media-breakpoint-down(sm) {
+      padding: 0 35px;
+    }
+  }
+.custom-fluid-container{
+    @include media-breakpoint-down(sm) {
+        padding: 0!important;
+    }
+}
+
 .topBar{
-    height: 27px;
+    height: 1.8rem;
     background-color: $blue;
     line-height: 1.7;
+    @include media-breakpoint-down(sm) {
+        font-size: .7rem;
+    }
     .topBar__wrapper{
         align-items: center;
         display: flex;
@@ -17,6 +33,7 @@
             text-align: center;
             color: $white;
             font-weight: 400;
+            line-height: 1.8rem;
             .topBar__item-bold{
                 font-weight: 700;
             }
@@ -32,12 +49,17 @@
     .header__nav{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        width: 100%;    
         .header__menu{
             margin-top: 0;
             margin-bottom: 0;
             display: inline-flex;
             .header__menuItem{
-                margin:0 30px;
+                margin:0 2rem;
+                @include media-breakpoint-down(sm) {
+                    margin:0 1rem;
+                }
                 .header__menuLink{
                     font-size: 1.4rem;
                     font-weight: 600;
@@ -45,6 +67,9 @@
                     &.active{
                         color: #0071bc;
                         text-decoration: underline;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        font-size: 1.3rem;
                     }
                 }
             }
@@ -84,10 +109,18 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
+        @include media-breakpoint-down(sm) {
+            flex-flow: column;
+            padding: 30px;
+            height: auto;
+        }
         .footer__copyright{
             font-size: 1.2rem;
             font-weight: 400;
             color: $white;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 40px;
+            }
         }
         .footer__social{
             margin-top: 0;
@@ -122,18 +155,28 @@
     font-size: 1.6rem;
     color: #333;
     width: 90%;
+    @include media-breakpoint-down(md) {
+        font-size: 1.4rem;
+    }
     .nextEvent__title{
       font-size: 2rem;
       font-weight: 200;
       color: #0071bc;
       text-align: center;
       margin-bottom: 50px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 30px;
+        }
     }
     .nextEvent__wrapper{
       display: flex;
       justify-content: space-between;
       padding-bottom: 50px;
       border-bottom: 1px solid #ddd;
+      @include media-breakpoint-down(md) {
+        padding-bottom: 30px;
+        border-bottom: none;
+        }
       .nextEvent__date{
         .fa{
           color: #0071bc;
@@ -146,6 +189,9 @@
           margin-right: 10px;
         }
       }
+      @include media-breakpoint-down(sm) {
+        flex-flow: column;
+      }
     }
     .nextEvent__more{
       text-align: center;
@@ -155,6 +201,15 @@
         font-size: 1.2rem;
         font-weight: 200;
         text-decoration: underline;
+        @include media-breakpoint-down(sm) {
+            color: #fff;
+            background-color: #0071bc;
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
+            padding: 1rem;
+            font-size: 1.4rem;
+        }
       }
     }
 }
@@ -166,14 +221,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 4rem;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 3rem;
+    }  
+    &:nth-child(2n){
+        flex-flow: row-reverse;
+        @include media-breakpoint-down(sm) {
+            flex-flow: column;
+        } 
+    }
+    @include media-breakpoint-down(sm) {
+        flex-flow: column;
+    } 
     .infoBlock__data{
       width: 50%;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        padding: 0 35px;
+      } 
       .infoBlock__title{
         font-weight: 200;
         font-size: 2rem;
         color: #0071bc;
         margin-bottom: 15px;
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        } 
       }
       .infoBlock__text{
         font-weight: 400;
@@ -187,16 +261,21 @@
       .infoBlock__image{
         width: 100%;
       }
+      @include media-breakpoint-down(sm) {
+            width: 100%;
+            padding: 20px 0;
+        } 
     }
 }
 
 .topSecondaryBar{
-    height: 60px;
+    height: 4rem;
     background-color: #1c2e54;
     .topSecondaryBar__menu{
         display: flex;
         justify-content: flex-end;
-        line-height: 3.3;
+        line-height: 4rem;
+        margin: 0;
         .topSecondaryBar__menuItem{
             display: inline-flex;
             margin-left: 50px;
@@ -236,8 +315,9 @@
       justify-content: center;
       align-items: center;
       .topBanner__textWrapper{
-        width: 950px;
+        max-width: 950px;
         color: #fff;
+        width: 82%;
         .topBanner__title{
           font-weight: 200;        
           font-size: 3.2rem;
@@ -316,15 +396,16 @@
         justify-content: space-between;
         margin-bottom: 30px;
         .connectUs__formInput{
-          width: 255px;
-          height: 50px;
-          padding: 0 10px;
-          font-size: 1.2rem;
-          font-weight: 400;
-          margin-right: 38px
+            max-width: 255px;
+            height: 50px;
+            padding: 0 10px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-right: 4%;
+            width: 100%;
         }
         .connectUs__formInput-large{
-            width: 46%;
+            width: 45%;
         }
         .connectUs__formSubmit{
           height: 50px;
@@ -340,8 +421,10 @@
         }
         .connectUs__formFileLabel{
           margin-bottom: 0;
+          display: flex;
+          width: 100%;
           .connectUs__formFileLabelButton{
-            width: 255px;
+            max-width: 255px;
             height: 50px;
             padding: 0 10px;
             font-size: 1.2rem;
@@ -356,6 +439,7 @@
             text-align: center;
             justify-content: center;
             position: relative;
+            width: 100%;
             .fa{
               position: absolute;
               left: 20px;
@@ -369,10 +453,14 @@
             align-items: center;
             margin-right: 20px;
             max-width: 210px;
+            width: 100%;
           }
         }
         .connectUs__formRowsWrapper{
             width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
         }
       }
       .connectUs__formBottom{
