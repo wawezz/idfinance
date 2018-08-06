@@ -50,13 +50,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;    
+        width: 100%;
+        height: 106px;    
         .header__menu{
             margin-top: 0;
             margin-bottom: 0;
             display: inline-flex;
+            height: 106px;
             .header__menuItem{
                 margin:0 2rem;
+                height: 106px;
+                line-height: 106px;
+                cursor: pointer;
                 @include media-breakpoint-down(sm) {
                     margin:0 1rem;
                 }
@@ -71,6 +76,14 @@
                     @include media-breakpoint-down(sm) {
                         font-size: 1.3rem;
                     }
+                }
+                .header__menuDropdown{
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    top: 100%;
+                    left: 0;
+                    z-index: 1000;
                 }
             }
         }
@@ -528,4 +541,8 @@
         }
       }
     }
+  }
+
+  header{
+    position: relative;
   }
