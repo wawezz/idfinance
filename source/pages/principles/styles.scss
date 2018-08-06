@@ -14,13 +14,13 @@
             height: 70px;
             padding: 0 80px 0 40px;
             margin: 0;        
-            font-size: 30px;
+            font-size: 2rem;
             font-weight: 200;
             color: #0071bc;
             text-decoration: none;
             &:after{
                 content: "\25b2";
-                font-size: 30px;
+                font-size: 2rem;
                 display: inline-block;
                 float: right;
                 color: #333;
@@ -34,7 +34,7 @@
         background-color: #eee;
         border-bottom: 1px solid #dedede;
         padding: 20px 40px;
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 400;
         color: #333;
         .accordionBlock__listing{
@@ -43,7 +43,7 @@
                 &::before{
                     content: "\2022"; 
                     color: #0071bc;
-                    font-size: 27px;
+                    font-size: 1.8rem;
                     margin-right: 10px;
                     display: inline-block;
                     vertical-align: middle;

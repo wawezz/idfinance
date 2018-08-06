@@ -17,7 +17,7 @@
             .newsBlock__info{
                 .newsBlock__title{
                     color: #0071bc;
-                    font-size: 24px;
+                    font-size: 1.6rem;
                     font-weight: 200;
                     margin-bottom: 20px;
                     &:hover{
@@ -26,13 +26,13 @@
                 }
                 .newsBlock__text{
                     color: #333;
-                    font-size: 14px;
+                    font-size: .9rem;
                     font-weight: 400;
                 }
                 .newsBlock__more{
                     color: #0071bc;
                     margin: 20px 0;
-                    font-size: 14px;
+                    font-size: .9rem;
                     font-weight: 400;
                     display: inline-block;
                     text-decoration: underline;
@@ -42,7 +42,7 @@
                 }
                 .newsBlock__buttom{
                     color: #777;
-                    font-size: 14px;
+                    font-size: .9rem;
                     font-weight: 400;
                     display: flex;
                     align-items: center;
@@ -57,7 +57,7 @@
         }
     }
     .newsBlock__navigation{
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 400;
         color: #333;
         display: flex;

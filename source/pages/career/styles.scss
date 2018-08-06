@@ -19,13 +19,13 @@
           color: #333;
           .careersListBlock__listInfoTitle{
             font-weight: 700;
-            font-size: 20px;
+            font-size: 1.3rem;
             display: block;
             margin-bottom: 20px;
           }
           .careersListBlock__listInfoBottom{
             font-weight: 400;
-            font-size: 14px;
+            font-size: .9rem;
             display: flex;
             align-items: center;
             .careersListBlock__listInfoPsition{
@@ -38,7 +38,7 @@
         .careersListBlock__listButton{
           width: 205px;
           background-color: #0071bc;
-          font-size: 20px;
+          font-size: 1.3rem;
           color: #fff;
           font-weight: 700;
           border-radius: 5px;
@@ -48,7 +48,7 @@
       }
     }
     .careersListBlock__navigation{
-      font-size: 18px;
+      font-size: 1.2rem;
       font-weight: 400;
       color: #333;
       display: flex;
@@ -93,7 +93,7 @@
     background-color: #0071bc;
     padding: 35px 25px;
     .careersSearchBlock__title{
-      font-size: 24px;
+      font-size: 1.6rem;
       font-weight: 400;
       text-align: center;
       color: #fff;
@@ -115,14 +115,14 @@
           position: absolute;
           line-height: 45px;
           color: #777;
-          font-size: 25px;
+          font-size: 1.6rem;
           left: 12px;
         }
       }
       .careersSearchBlock__submit{
         color: #fff;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 1.3rem;
         padding: 30px;
         width: 276px;
         border: 2px #fff solid;

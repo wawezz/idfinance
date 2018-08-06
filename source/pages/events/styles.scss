@@ -7,7 +7,7 @@
         color: #dedede;
         width: 86%;
         margin: 0 auto;
-        font-size: 14px;
+        font-size: .9rem;
         font-weight: 200;
         border-bottom: 2px solid #dedede;
     }
@@ -24,7 +24,7 @@
             flex-flow: row;
             flex-wrap: wrap;
             color: #333;
-            font-size: 24px;
+            font-size: 1.6rem;
             font-weight: 400;
             .eventsList__itemDate{
                 width: 25%;
@@ -44,7 +44,7 @@
                 background-color: #0071bc;
                 border: 2px solid #0071bc;
                 color: #fff;
-                font-size: 16px;
+                font-size: 1.1rem;
                 font-weight: 400;
                 border-radius: 5px;
                 padding: 5px;
@@ -80,7 +80,7 @@
             margin: 0 20px;
             .eventsList__navigationLink{
                 color: #0071bc;
-                font-size: 24px;
+                font-size: 1.6rem;
                 font-weight: 400;
             }
         }

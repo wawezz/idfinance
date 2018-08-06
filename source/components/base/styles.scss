@@ -39,7 +39,7 @@
             .header__menuItem{
                 margin:0 30px;
                 .header__menuLink{
-                    font-size: 21px;
+                    font-size: 1.4rem;
                     font-weight: 600;
                     color: $dark-grey;
                     &.active{
@@ -85,7 +85,7 @@
         display: flex;
         justify-content: space-between;
         .footer__copyright{
-            font-size: 18px;
+            font-size: 1.2rem;
             font-weight: 400;
             color: $white;
         }
@@ -109,7 +109,7 @@
       .title{
           color: #0071bc;
           font-weight: 200;
-          font-size: 30px;
+          font-size: 2rem;
           text-align: center;
           margin-bottom: 50px;
       }
@@ -119,11 +119,11 @@
 .nextEvent{
     margin: 75px auto;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.6rem;
     color: #333;
     width: 90%;
     .nextEvent__title{
-      font-size: 30px;
+      font-size: 2rem;
       font-weight: 200;
       color: #0071bc;
       text-align: center;
@@ -152,7 +152,7 @@
       margin: 25px 0;
       .nextEvent__moreLink{
         color: #0071bc;
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 200;
         text-decoration: underline;
       }
@@ -171,13 +171,13 @@
       width: 50%;
       .infoBlock__title{
         font-weight: 200;
-        font-size: 30px;
+        font-size: 2rem;
         color: #0071bc;
         margin-bottom: 15px;
       }
       .infoBlock__text{
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1.1rem;
         color: #333;
       }
     }
@@ -203,7 +203,7 @@
             .topSecondaryBar__menuLink{
                 color: #fff;
                 font-weight: 600;
-                font-size: 18px;
+                font-size: 1.2rem;
                 &.active{
                     text-decoration: underline;
                 }
@@ -240,24 +240,24 @@
         color: #fff;
         .topBanner__title{
           font-weight: 200;        
-          font-size: 48px;
+          font-size: 3.2rem;
           margin: 16px 0;
         }
         .topBanner__text{
           font-weight: 600;
-          font-size: 24px;
+          font-size: 1.6rem;
           .fa{
               width: 30px;
           }
         }
         .topBanner__tags{
-            font-size: 14px;
+            font-size: .9rem;
             font-weight: 200;
         }
         .topBanner__button{
             color: #fff;
             background-color: #0071bc;
-            font-size: 20px;
+            font-size: 1.3rem;
             font-weight: 400;
             padding: 20px;
             display: inline-block;
@@ -266,7 +266,7 @@
             border-radius: 5px;
         }
         .topBanner__form{
-            font-size: 20px;
+            font-size: 1.3rem;
             font-weight: 400;
             display: flex;
             align-items: center;
@@ -300,12 +300,12 @@
     padding: 35px 0;
     color: #fff;
     .connectUs__title{
-      font-size: 30px;
+      font-size: 2rem;
       font-weight: 400;
       line-height: 1;
     }
     .connectUs__text{
-      font-size: 18px;
+      font-size: 1.2rem;
       font-weight: 400;
       margin-bottom: 30px;
     }
@@ -319,7 +319,7 @@
           width: 255px;
           height: 50px;
           padding: 0 10px;
-          font-size: 18px;
+          font-size: 1.2rem;
           font-weight: 400;
           margin-right: 38px
         }
@@ -344,7 +344,7 @@
             width: 255px;
             height: 50px;
             padding: 0 10px;
-            font-size: 18px;
+            font-size: 1.2rem;
             font-weight: 400;
             margin-right: 15px;
             background-color: #fff;
@@ -359,7 +359,7 @@
             .fa{
               position: absolute;
               left: 20px;
-              font-size: 35px;
+              font-size: 2.3rem;
             }
           }
           .connectUs__formFileLabelInfo{
