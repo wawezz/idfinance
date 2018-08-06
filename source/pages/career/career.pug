@@ -8,7 +8,8 @@ block main
             li.topSecondaryBar__menuItem #[a(href="principles.html").topSecondaryBar__menuLink Our principles]
             li.topSecondaryBar__menuItem #[a(href="press.html").topSecondaryBar__menuLink Press about us]
     .topBanner
-        img(src=require("./images/careerTop.jpg"))
+        .topBanner__imageWrapper
+            img(src=require("./images/careerTop.jpg")).topBanner__image
         .topBanner__overlay
         .topBanner__textOverlay
             .topBanner__textWrapper

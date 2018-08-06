@@ -8,7 +8,8 @@ block main
             li.topSecondaryBar__menuItem #[a(href="team.html").topSecondaryBar__menuLink Corporate Governance]
             li.topSecondaryBar__menuItem #[a(href="events.html").topSecondaryBar__menuLink.active Events]
     .topBanner
-        img(src=require("./images/eventsTop.jpg"))
+        .topBanner__imageWrapper
+            img(src=require("./images/eventsTop.jpg")).topBanner__image
         .topBanner__overlay
         .topBanner__textOverlay
             .topBanner__textWrapper

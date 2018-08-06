@@ -296,6 +296,28 @@
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
+    @include media-breakpoint-down(sm) {
+        min-height: 500px;
+    }
+    .topBanner__imageWrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        @include media-breakpoint-down(sm) {
+            min-height: 500px;
+        }
+        .topBanner__image{
+            width: 100%;
+            @include media-breakpoint-down(sm) {
+                min-height: 500px;
+                width: auto;
+                position: absolute;
+            }
+        }
+    }
     .topBanner__overlay{
       width: 100%;
       height: 100%;

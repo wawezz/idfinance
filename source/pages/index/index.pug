@@ -3,7 +3,8 @@ block title
     | Index page
 block main
     .topBanner
-        img(src=require("./images/index_main.jpg"))
+        .topBanner__imageWrapper
+            img(src=require("./images/index_main.jpg")).topBanner__image
         .topBanner__overlay
         .topBanner__textOverlay
             .topBanner__textWrapper
