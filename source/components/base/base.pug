@@ -17,19 +17,22 @@ html
                         li.topBar__item GBP   #[span.topBar__item-bold 0.74] #[i.fa.fa-caret-up]
                         li.topBar__item JPY   #[span.topBar__item-bold 110.99] #[i.fa.fa-caret-up]
                 .header.container.custom-container
-                    a(href="index.html").header__logo.d-none.d-lg-block
+                    a(href="index.html").header__logo
                         img(src=require("./images/logo.png")).header__logoImg
-                    .header__nav
-                        ul.header__menu.d-none.d-sm-inline-flex
+                    .fa.fa-bars.header__burger.d-block.d-md-none(aria-hidden="true")
+                    .header__nav.collapsed
+                        .header__close.d-block.d-md-none
+                            .fa.fa-times(aria-hidden="true")                        
+                        ul.header__menu.collapsed
                             li.header__menuItem #[a(href="about.html").header__menuLink About us]
-                                .topSecondaryBar.header__menuDropdown
+                                .topSecondaryBar.header__menuDropdown.collapsed
                                     ul.topSecondaryBar__menu.container.custom-container
                                         li.topSecondaryBar__menuItem #[a(href="career.html").topSecondaryBar__menuLink Careers]
                                         li.topSecondaryBar__menuItem #[a(href="principles.html").topSecondaryBar__menuLink Our principles]
                                         li.topSecondaryBar__menuItem #[a(href="press.html").topSecondaryBar__menuLink Press about us]
                             li.header__menuItem #[a(href="products.html").header__menuLink Products]
                             li.header__menuItem #[a(href="investors.html").header__menuLink Investors]
-                                .topSecondaryBar.header__menuDropdown
+                                .topSecondaryBar.header__menuDropdown.collapsed
                                     ul.topSecondaryBar__menu.container.custom-container
                                         li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Financial Results]
                                         li.topSecondaryBar__menuItem #[a(href="team.html").topSecondaryBar__menuLink Corporate Governance]
@@ -37,7 +40,7 @@ html
                             li.header__menuItem #[a(href="contacts.html").header__menuLink Contacts]
                             li.header__menuItem #[a(href="news.html").header__menuLink News]
                         .header__menuWrapper
-                            a(href="#").header__search
+                            a(href="#").header__search.d-none.d-md-inline-flex
                                 img(src=require("./images/search.png"))
                             ul.header__langs
                                 li.header__langsItem 
