@@ -2,7 +2,7 @@ extends ../../components/base/base
 block title
     | Career page
 block main
-    .topSecondaryBar
+    .topSecondaryBar.d-none.d-md-flex
         ul.topSecondaryBar__menu.container.custom-container
             li.topSecondaryBar__menuItem #[a(href="career.html").topSecondaryBar__menuLink.active Careers]
             li.topSecondaryBar__menuItem #[a(href="principles.html").topSecondaryBar__menuLink Our principles]
@@ -15,10 +15,10 @@ block main
             .topBanner__textWrapper
                 h1.topBanner__title Become part of out team!
                 h3.topBanner__text Find your purpose and build relationships#[br]with a ID Finance
-                a(href="#").topBanner__button Find Your Role
-    .main.container.custom-container
-        .main__wrapper
-            h2.title Careers
+                a(href="#").topBanner__button.d-none.d-md-inline-block Find Your Role
+    .main.container.custom-container.custom-fluid-container
+        .main__wrapper.main__wrapper-fluid
+            h2.title.d-none.d-md-flex Careers
             .orientedWrapper
                 .careersListBlock
                     ul.careersListBlock__list
@@ -79,6 +79,7 @@ block main
                             li.careersListBlock__navigationNumber
                                 a(href="#").careersListBlock__navigationLink 12                                                                                              
                         a(href="#").careersListBlock__navigationButton.active Next
+                h2.title.d-block.d-md-none Careers
                 .careersSearchBlock
                     .careersSearchBlock__title Search for a Job
                     form.careersSearchBlock__form
@@ -109,7 +110,7 @@ block main
                         input(type="file" id="contactFile" name="contactFile").fileGetter.connectUs__formFile
                         label(for="contactFile").connectUs__formFileLabel 
                             .connectUs__formFileLabelButton 
-                                i.fa.fa-file-o.d-none.d-lg-block
+                                i.fa.fa-file-o.d-block.d-md-none.d-lg-block
                                 | Resume
                             .connectUs__formFileLabelInfo.fileSetter Файл не выбран
                     input(value="Join" type="submit" name="contactSubmit").connectUs__formSubmit
@@ -118,13 +119,13 @@ block main
                         input(type="checkbox" id="agreement" name="agreement").connectUs__formCheckbox
                         span.connectUs__formCheckboxOuter.fa
                     .connectUs__formBottomText #[span.connectUs__formCheckboxSpanLable I Consent.] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius malesuada convallis. Phasellus pellentesque, mi id consectetur cursus, sapien lorem laoreet velit, vulputate molestie risus quam eu est.
-    .main.container.custom-container
+    .main.container.custom-container.custom-fluid-container
         .main__wrapper
-            .infoBlock.infoBlock-m4
+            .infoBlock.infoBlock-m3_2
                 .infoBlock__data
                     .infoBlock__title Why work for us?
                     .infoBlock__text
                         p ID Finance is a fast-growing data science, credit scoring and digital finance company that is pioneering fintech innovation in emerging markets. ID Finance uses its proprietary IT infrastructure and risk management capabilities to develop innovative financial solutions. ID Finance brings financial innovations into emerging markets.
                         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel malesuada lorem, non accumsan lectus. Aenean eget velit ligula. Integer pretium egestas sem, vitae rhoncus urna viverra at.
-                .infoBlock__imageWrapper
+                .infoBlock__imageWrapper.infoBlock__imageWrapper-noPadding
                     img.infoBlock__image(src=require("./images/whyImg.jpg"))

@@ -6,7 +6,7 @@
   align-items: flex-start;
 
   @include media-breakpoint-down(sm) {
-    flex-flow: wrap;
+    flex-flow: wrap-reverse;
   }
 
   .careersListBlock{
@@ -14,10 +14,15 @@
     max-width: 730px;
     width: 100%;
     @include media-breakpoint-down(sm) {
-      margin: 20px auto;
+      margin: 0 35px;
+      max-width: inherit;
     }
     .careersListBlock__list{
-      margin: 0;
+      margin: 0 auto;
+      @include media-breakpoint-down(sm) {
+        margin: 20px auto;
+        max-width: inherit;
+      }
       .careersListBlock__listItem{
         background-color: #f1f1f1;
         display: inline-flex;
@@ -44,9 +49,23 @@
             align-items: center;
             .careersListBlock__listInfoPsition{
               width: 200px;
+              @include media-breakpoint-down(sm) {
+                width: 100%;
+              }
             }
             .careersListBlock__listInfoPlace{
+              @include media-breakpoint-down(sm) {
+                width: 100%;
+              }
             }
+            @include media-breakpoint-down(sm) {
+              flex-flow: column;
+              justify-content: left
+            }
+          }
+          @include media-breakpoint-down(sm) {
+            margin: 0 auto 4rem auto;
+            width: 100%;
           }
         }
         .careersListBlock__listButton{
@@ -59,6 +78,11 @@
           padding: 10px;
           text-align: center;
         }
+        @include media-breakpoint-down(sm) {
+          padding: 20px;
+          flex-flow: column;
+          justify-content: center
+        }
       }
     }
     .careersListBlock__navigation{
@@ -69,6 +93,9 @@
       justify-content: space-between;
       width: 80%;
       margin: 40px auto 0 auto;
+      @include media-breakpoint-down(sm) {
+        margin: 40px auto
+      }
       .careersListBlock__navigationButton{
         color: #777;
         cursor: not-allowed;
@@ -79,6 +106,14 @@
         }
         &:hover{
           text-decoration: none;
+        }
+        @include media-breakpoint-down(sm) {
+          position: absolute;
+          left: 35px;
+          &:last-child{
+            left: inherit;
+            right: 35px;
+          }
         }
       }
       .careersListBlock__navigationPages{
@@ -99,6 +134,9 @@
             }
           }
         }
+        @include media-breakpoint-down(sm) {
+          margin: 35px auto 0 auto;
+        }
       }
     }
   }
@@ -108,7 +146,8 @@
     padding: 35px 25px;
     max-width: 405px;
     @include media-breakpoint-down(sm) {
-      margin: 20px auto;
+      margin: 0 auto 20px auto;
+      max-width: initial;
     }
     .careersSearchBlock__title{
       font-size: 1.6rem;
@@ -119,6 +158,9 @@
     .careersSearchBlock__form{
       width: 100%;
       margin: 80px 0 0 0;
+      @include media-breakpoint-down(sm) {
+        margin: 40px 0 0 0;
+      }
       .careersSearchBlock__formSelect{
         display: flex;
         width: 100%;
@@ -150,12 +192,21 @@
         display: block; 
         background-color: #0071bc;
         cursor: pointer;
+        @include media-breakpoint-down(sm) {
+          padding: 21px;
+          margin: 50px auto 35px auto;
+        }
       }
       .careersSearchBlock__reset{
         float: right;
         background: none;
         color: #fff;
         cursor: pointer;
+        @include media-breakpoint-down(sm) {
+          float: none;
+          margin: 0 auto;
+          display: block;
+        }
       }
     }
   }

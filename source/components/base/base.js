@@ -35,4 +35,17 @@ $(function () {
       element.toggleClass('collapsed');
     }
   });
+
+  $(document).on('click', '.topBanner__down', function(){
+    var top = $(".topBanner").offset().top;
+    var height = $(".topBanner").height();
+
+    var body = $("html, body");
+    body.stop().animate({scrollTop:top + height + 1}, 500, 'swing', function() { 
+       
+    });
+
+//    window.scrollTo(0, top + height + 1);
+  });
+
 });

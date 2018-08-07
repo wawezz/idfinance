@@ -2,7 +2,7 @@ extends ../../components/base/base
 block title
     | Index page
 block main
-    .topBanner
+    .topBanner.topBanne-large
         .topBanner__imageWrapper
             img(src=require("./images/index_main.jpg")).topBanner__image
         .topBanner__overlay
@@ -10,6 +10,8 @@ block main
             .topBanner__textWrapper
                 h1.topBanner__title Data Science. Credit Scoring.#[br]Digital Finance
                 h3.topBanner__text ID Finance is a fast-growing fintech company specializing in data science, credit scoring and digital finance in emerging and well-developed markets.
+        .topBanner__down.d-block.d-md-none
+            img(src=require("./images/down.png"))
     .main.container.custom-container.custom-fluid-container
         .main__wrapper
             .infoBlock

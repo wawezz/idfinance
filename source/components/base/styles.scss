@@ -66,6 +66,9 @@
     .header__logo{
         .header__logoImg{
             width: 100%;
+            @include media-breakpoint-down(sm) {
+                max-width: 160px;
+            }
         }
     }
     .header__nav{
@@ -257,6 +260,15 @@
           font-size: 2rem;
           text-align: center;
           margin-bottom: 50px;
+          @include media-breakpoint-down(sm) {
+                width: 100%;
+                margin: 1rem 0;
+          }
+      }
+      &.main__wrapper-fluid{
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+        }
       }
     }
 }
@@ -267,6 +279,11 @@
     font-size: 1.6rem;
     color: #333;
     width: 90%;
+    &.nextEvent-sm{
+        @include media-breakpoint-down(sm) {
+            margin: 40px auto;
+        }
+    }
     @include media-breakpoint-down(md) {
         font-size: 1.4rem;
     }
@@ -330,6 +347,11 @@
     &.infoBlock-m4{
         margin: 40px 0;
     }
+    &.infoBlock-m3_2{
+        @include media-breakpoint-down(sm) {
+            margin: 30px 0 20px 0;
+        }
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -376,7 +398,12 @@
       @include media-breakpoint-down(sm) {
             width: 100%;
             padding: 20px 0;
-        } 
+      } 
+        &.infoBlock__imageWrapper-noPadding{
+            @include media-breakpoint-down(sm) {
+                padding: 0;
+            } 
+        }
     }
 }
 
@@ -387,7 +414,7 @@
         display: flex;
         justify-content: flex-end;
         line-height: 4rem;
-        margin: 0;
+        margin: 0 auto;
         .topSecondaryBar__menuItem{
             display: inline-flex;
             margin-left: 50px;
@@ -408,8 +435,23 @@
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
+    &.topBanne-large{
+        @include media-breakpoint-down(sm) {
+            min-height: 515px;
+        }
+        .topBanner__imageWrapper{
+            @include media-breakpoint-down(sm) {
+                min-height: 515px;
+            } 
+        }
+        .topBanner__image{
+            @include media-breakpoint-down(sm) {
+                min-height: 515px;
+            } 
+        }
+    }
     @include media-breakpoint-down(sm) {
-        min-height: 515px;
+        min-height: 320px;
     }
     .topBanner__imageWrapper{
         width: 100%;
@@ -419,12 +461,12 @@
         overflow: hidden;
         position: relative;
         @include media-breakpoint-down(sm) {
-            min-height: 515px;
+            min-height: 320px;
         }
         .topBanner__image{
             width: 100%;
             @include media-breakpoint-down(sm) {
-                min-height: 515px;
+                min-height: 320px;
                 width: auto;
                 position: absolute;
             }
@@ -457,14 +499,14 @@
           font-size: 3.2rem;
           margin: 16px 0;
           @include media-breakpoint-down(sm) {
-            font-size: 1.6rem;
+            font-size: 2rem;
           }
         }
         .topBanner__text{
           font-weight: 600;
           font-size: 1.6rem;
           @include media-breakpoint-down(sm) {
-            font-size: 1rem;
+            font-size: 1.2rem;
           }
           .fa{
               width: 30px;
@@ -513,6 +555,16 @@
     img{
         width: 100%;
     }
+    .topBanner__down{
+        position: absolute;
+        top: 91%;
+        width: 100%;
+        text-align: center; 
+        cursor: pointer;
+        img{
+            width: initial;
+        }   
+    }
   }
 
   .connectUs{
@@ -535,6 +587,9 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
+        @include media-breakpoint-down(sm) {
+            flex-flow: column;
+        }
         .connectUs__formInput{
             max-width: 255px;
             height: 50px;
@@ -543,6 +598,10 @@
             font-weight: 400;
             margin-right: 4%;
             width: 100%;
+            @include media-breakpoint-down(sm) {
+                max-width: inherit;
+                margin: 0 0 30px 0;
+            }
         }
         .connectUs__formInput-large{
             width: 45%;
@@ -555,6 +614,10 @@
           color: #fff;
           background-color: #0071bc;
           cursor: pointer;
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            margin: 15px 0 0 0;
+          }
         }
         .connectUs__formFile{
           display: none;
@@ -563,6 +626,9 @@
           margin-bottom: 0;
           display: flex;
           width: 100%;
+          @include media-breakpoint-down(sm) {
+                flex-flow: column;
+          }
           .connectUs__formFileLabelButton{
             max-width: 255px;
             height: 50px;
@@ -585,6 +651,10 @@
               left: 20px;
               font-size: 2.3rem;
             }
+            @include media-breakpoint-down(sm) {
+                max-width: inherit;
+                margin: 0;
+            }
           }
           .connectUs__formFileLabelInfo{
             display: inline-flex;
@@ -594,6 +664,10 @@
             margin-right: 20px;
             max-width: 210px;
             width: 100%;
+            @include media-breakpoint-down(sm) {
+                max-width: inherit;
+                margin: 0;
+            }
           }
         }
         .connectUs__formRowsWrapper{
@@ -601,6 +675,9 @@
             align-items: center;
             display: flex;
             justify-content: space-between;
+            @include media-breakpoint-down(sm) {
+                flex-flow: column;
+            }
         }
       }
       .connectUs__formBottom{
