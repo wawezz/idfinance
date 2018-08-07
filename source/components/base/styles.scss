@@ -161,6 +161,7 @@
                         position: relative;
                         height: auto;
                         background-color: inherit;
+                        top: 0;
                     }
                     .topSecondaryBar__menu{
                         @include media-breakpoint-down(sm) {
