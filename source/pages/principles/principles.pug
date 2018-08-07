@@ -2,7 +2,7 @@ extends ../../components/base/base
 block title
     | Principles page
 block main
-    .topSecondaryBar
+    .topSecondaryBar.d-none.d-md-flex
         ul.topSecondaryBar__menu.container.custom-container
             li.topSecondaryBar__menuItem #[a(href="career.html").topSecondaryBar__menuLink Careers]
             li.topSecondaryBar__menuItem #[a(href="principles.html").topSecondaryBar__menuLink.active Our principles]
@@ -14,9 +14,7 @@ block main
         .topBanner__textOverlay
             .topBanner__textWrapper
                 h1.topBanner__title Lorem ipsum lorem ipsum!
-                h3.topBanner__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.#[br]Morbi viverra elementum suscipit.
-        .topBanner__down.d-block.d-md-none
-            img(src=require("./images/down.png"))                
+                h3.topBanner__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.#[br]Morbi viverra elementum suscipit.        
     .main.container.custom-container
         .main__wrapper
             #accordion.accordionBlock

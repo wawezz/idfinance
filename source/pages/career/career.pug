@@ -85,17 +85,20 @@ block main
                     form.careersSearchBlock__form
                         .careersSearchBlock__row
                             i.fa.fa-map-marker
-                            select.careersSearchBlock__formSelect 
-                                option(disabled selected value="").careersSearchBlock__formOption Location
-                                option(value="peru").careersSearchBlock__formOption Peru
+                            .careersSearchBlock__formSelectWrapper
+                                select.careersSearchBlock__formSelect 
+                                    option(disabled selected value="").careersSearchBlock__formOption Location
+                                    option(value="peru").careersSearchBlock__formOption Peru
                         .careersSearchBlock__row
-                            select.careersSearchBlock__formSelect
-                                option(disabled selected value="").careersSearchBlock__formOption Job Function
-                                option(value="peru").careersSearchBlock__formOption Leadership Programs
+                            .careersSearchBlock__formSelectWrapper
+                                select.careersSearchBlock__formSelect
+                                    option(disabled selected value="").careersSearchBlock__formOption Job Function
+                                    option(value="peru").careersSearchBlock__formOption Leadership Programs
                         .careersSearchBlock__row
-                            select.careersSearchBlock__formSelect
-                                option(disabled selected value="").careersSearchBlock__formOption Experience
-                                option(value="peru").careersSearchBlock__formOption Entry-Level  
+                            .careersSearchBlock__formSelectWrapper
+                                select.careersSearchBlock__formSelect
+                                    option(disabled selected value="").careersSearchBlock__formOption Experience
+                                    option(value="peru").careersSearchBlock__formOption Entry-Level  
                         input(value="Show my jobs" type="submit" name="jobsSubmit").careersSearchBlock__submit
                         input(value="X  Clear Filters" type="reset" name="jobsRest").careersSearchBlock__reset
     .connectUs

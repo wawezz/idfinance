@@ -8,13 +8,11 @@ block main
         .topBanner__overlay
         .topBanner__textOverlay
             .topBanner__textWrapper
-                h1.topBanner__title Lorem ispum dolor sit amet, #[br]consectur adipiscing elit.
-        .topBanner__down.d-block.d-md-none
-            img(src=require("./images/down.png"))        
+                h1.topBanner__title Lorem ispum dolor sit amet, #[br]consectur adipiscing elit.       
     .main.container.custom-container
         .main__wrapper
             .row
-                .contactsBlock.col-6
+                .contactsBlock.col-12.col-md-6
                     .contactsBlock__title Contacts
                         form.contactsBlock__form
                             .contactsBlock__row
@@ -28,11 +26,12 @@ block main
                                 input(type="text" value="" id="contactsCountry" name="contactsCountry").contactsBlock__formInput                             
                             .contactsBlock__row
                                 label(for="contactsSubject").contactsBlock__formLabel Subject
-                                select(id="contactsSubject" name="contactsSubject").contactsBlock__formSelect
-                                    option(value="")
-                                    option(value="value1") Значение 1
-                                    option(value="value2") Значение 2
-                                    option(value="value3") Значение 3
+                                .contactsBlock__formSelectWrapper
+                                    select(id="contactsSubject" name="contactsSubject").contactsBlock__formSelect
+                                        option(value="")
+                                        option(value="value1") Значение 1
+                                        option(value="value2") Значение 2
+                                        option(value="value3") Значение 3
                             .contactsBlock__row
                                 label(for="contactsMessage").contactsBlock__formLabel Message
                                 textarea(id="contactsMessage" name="contactsMessage" rows="6").contactsBlock__formTextarea
@@ -45,5 +44,5 @@ block main
                                 input(value="Отправить" type="submit").contactsBlock__submit
 
 
-                .col-6
+                .col-6.d-none.d-md-flex
                     #map_canvas

@@ -264,6 +264,11 @@
                 width: 100%;
                 margin: 1rem 0;
           }
+          &.title-m2{
+            @include media-breakpoint-down(sm) {
+                margin: 2rem 0;
+            }
+          }
       }
       &.main__wrapper-fluid{
         @include media-breakpoint-down(sm) {
@@ -359,6 +364,9 @@
     @include media-breakpoint-down(md) {
         margin-bottom: 3rem;
     }  
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 1rem;
+    } 
     &:nth-child(2n){
         flex-flow: row-reverse;
         @include media-breakpoint-down(sm) {
@@ -523,7 +531,7 @@
             font-weight: 400;
             padding: 20px;
             display: inline-block;
-            min-width: 280px;        
+            min-width: 290px;        
             text-align: center;
             border-radius: 5px;
         }
@@ -532,22 +540,37 @@
             font-weight: 400;
             display: flex;
             align-items: center;
+            @include media-breakpoint-down(sm) {
+                flex-flow: column;
+            }
             .topBanner__input{
-                width: 410px;
+                width: 100%;
+                max-width: 410px;
                 height: 70px;
                 color: #333;
                 border-radius: 5px;
                 padding: 25px 35px;
                 margin-right: 5px;
+                @include media-breakpoint-down(sm) {
+                    height: 50px;
+                    padding: 0 20px;
+                    margin-bottom: 20px;
+                    max-width: 290px;
+                }
             }
             .topBanner__submit{
                 height: 70px;
-                width: 280px;
+                width: 100%;
+                max-width: 290px;
                 color: #fff;
                 background-color: #0071bc;
                 border-radius: 5px;
                 padding: 25px 35px;
                 cursor: pointer;
+                @include media-breakpoint-down(sm) {
+                    height: 50px;
+                    padding: 0 20px;
+                }
             }
         }
       }
@@ -737,4 +760,8 @@
   }
   .visuallyhidden {
     opacity: 0;
+  }
+
+  select::-ms-expand {
+    display: none;
   }

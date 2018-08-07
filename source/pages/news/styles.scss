@@ -1,37 +1,67 @@
+@import "../../common/styles/styles";
+
 .tweetsBlock{
     width: 90%;
     max-width: 700px;
     margin: 80px auto 0 auto;
+    @include media-breakpoint-down(md) {
+        padding: 0 35px;
+        width: 100%;
+        margin: 35px auto;
+    }
 }
 .newsBlock{
     padding: 0 95px;
+    @include media-breakpoint-down(md) {
+        padding: 0;
+    }
     .newsBlock__list{
         .newsBlock__item{
             margin-bottom: 33px;
             display: flex;
             min-height: 180px;
+            @include media-breakpoint-down(sm) {
+                flex-flow: column;
+            }
             .newsBlock__imageWrapper{
                 width: 28%;
                 margin-right: 35px;
                 .newsBlock__image{
                     width: 100%;
                     max-width: 300px;
+                    @include media-breakpoint-down(sm) {
+                        max-width: inherit;
+                    }
+                }
+                @include media-breakpoint-down(md) {
+                    width: 40%;
+                }
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    margin-bottom: 30px;
                 }
             }
             .newsBlock__info{
                 .newsBlock__title{
                     color: #0071bc;
                     font-size: 1.6rem;
-                    font-weight: 200;
-                    margin-bottom: 20px;
+                    font-weight: 200;                    
+                    display: block;
                     &:hover{
                         text-decoration: none;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        line-height: 1.2;
+                        margin-bottom: 20px;
                     }
                 }
                 .newsBlock__text{
                     color: #333;
                     font-size: .9rem;
                     font-weight: 400;
+                    @include media-breakpoint-down(sm) {
+                        font-size: 1rem;
+                    }
                 }
                 .newsBlock__more{
                     color: #0071bc;
@@ -42,6 +72,9 @@
                     text-decoration: underline;
                     &:hover{
                         text-decoration: none;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        font-size: 1rem;
                     }
                 }
                 .newsBlock__buttom{
@@ -57,6 +90,9 @@
                         margin-right: 40px;
                     }
                 }
+                @include media-breakpoint-down(sm) {
+                    margin: 0 35px;
+                }
             }
         }
     }
@@ -68,36 +104,51 @@
         justify-content: space-between;
         width: 45%;
         margin: 90px auto 0 auto;
+        @include media-breakpoint-down(sm) {
+            margin: 40px auto;
+            width: 80%;
+        }
         .newsBlock__navigationButton{
-        color: #777;
-        cursor: not-allowed;
-        &.active{
-            color: #333;
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        &:hover{
-            text-decoration: none;
-        }
+            color: #777;
+            cursor: not-allowed;
+            &.active{
+                color: #333;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            &:hover{
+                text-decoration: none;
+            }
+            @include media-breakpoint-down(sm) {
+                position: absolute;
+                left: 35px;
+                &:last-child{
+                  left: inherit;
+                  right: 35px;
+                }
+            }
         }
         .newsBlock__navigationPages{
-        display: inline-flex;
-        margin: 0 20px;
-        .newsBlock__navigationNumber{
-            width: 25px;
-            height: 25px;
-            text-align: center;
-            .newsBlock__navigationLink{
-            color: #333;
-            }
-            &.active{
-            background-color: #0071bc;
-            color: #fff;
-            .newsBlock__navigationLink{
+            display: inline-flex;
+            margin: 0 20px;
+            .newsBlock__navigationNumber{
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                .newsBlock__navigationLink{
+                color: #333;
+                }
+                &.active{
+                background-color: #0071bc;
                 color: #fff;
+                .newsBlock__navigationLink{
+                    color: #fff;
+                }
+                }
             }
+            @include media-breakpoint-down(sm) {
+                margin: 35px auto 0 auto;
             }
-        }
         }
     }
 }

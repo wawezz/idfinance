@@ -1,8 +1,21 @@
+@import "../../common/styles/styles";
+
 .postBlock{
     color: #333;
     font-size: 1.2rem;
     font-weight: 400;
     padding: 0 80px;
+    @include media-breakpoint-down(sm) {
+        padding:0;
+        img{
+            width: 100%;
+            max-width: inherit!important;
+            margin: 20px 0;
+        }
+        p{
+            padding: 0 35px;
+        }
+    } 
     p{
         margin-bottom: 1.5rem; 
     }
@@ -20,7 +33,12 @@
         width: 100%;
         border: 2px solid #0071bc;
         line-height: 1.2;
-        margin: 2rem 0
+        margin: 2rem 0;
+        @include media-breakpoint-down(sm) {
+            margin: 2rem 35px;
+            font-size: 1.4rem;
+            width: inherit;
+        }
     }
     img.center{
         max-width: 100%;

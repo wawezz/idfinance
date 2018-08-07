@@ -1,3 +1,5 @@
+@import "../../common/styles/styles";
+
 .eventsList{
     .eventsList__header{
         display: flex;
@@ -26,17 +28,34 @@
             color: #333;
             font-size: 1.6rem;
             font-weight: 400;
+            @include media-breakpoint-down(sm) {
+                flex-flow: column;
+                height: inherit;
+                padding: 35px 0;
+            }
             .eventsList__itemDate{
                 width: 25%;
                 margin-right: 5%;
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    margin: 0;
+                }
             }
             .eventsList__itemName{
                 width: 28%;
                 margin-right: 5%;
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    margin: 0;
+                }
             }
             .eventsList__itemPlace{
                 width: 22%;
                 margin-right: 5%;
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    margin: 15px auto 0 auto;
+                }
             }
             .eventsList__itemAction{
                 width: 10%;
@@ -51,6 +70,13 @@
                 text-align: center;
                 &.ended{
                     display: none;    
+                }
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    margin: 25px auto 0 auto;
+                    padding: 8px;
+                    font-size: 1.6rem;
+                    border-radius: 0;
                 }
             }
             &.ended{
@@ -69,7 +95,10 @@
             display: flex;
             border-bottom:2px solid #dedede;
             width: 86%;
-            margin: 0 auto;  
+            margin: 0 auto; 
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            } 
         }
     }
     .eventsList__navigation{
@@ -83,6 +112,36 @@
                 font-size: 1.6rem;
                 font-weight: 400;
             }
+        }
+    }
+    .eventsList__navigation-mobile{
+        position: relative;
+        width: 100%;
+        &:after {
+            content: '\F078';
+            font: 20px FontAwesome;
+            color: #0071bc;
+            right: 15px;
+            top: 55%;
+            position: absolute;
+            pointer-events: none;
+        }
+        .eventsList__navigation-mobileSelect{
+            width: 100%;
+            margin-top: 30px;
+            height: 50px;
+            border: 2px solid #0071bc;
+            background-color: #fff;
+            text-align-last: center;
+            display: block;
+            color: #0071bc;
+            font-size: 1.6rem;
+            font-weight: 400;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -ms-word-break: normal;
+            word-break: normal;
         }
     }
 }

@@ -1,3 +1,5 @@
+@import "../../common/styles/styles";
+
 .pressBlock{
     display: flex;
     flex-wrap:wrap;
@@ -13,5 +15,12 @@
         .pressBlock__img{
             width: initial;
         }
+        @include media-breakpoint-down(md) {
+            width: calc(50% - 40px);
+        } 
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            margin: 20px 0;
+        } 
     }
 }

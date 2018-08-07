@@ -179,6 +179,26 @@
           left: 12px;
         }
       }
+      .careersSearchBlock__formSelectWrapper{
+        position: relative;
+        width: 100%;
+        &:after {
+            content: '\F078';
+            font: 20px FontAwesome;
+            color: #333;
+            right: 15px;
+            top: 28%;
+            position: absolute;
+            pointer-events: none;
+        }
+        .careersSearchBlock__formSelect{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -ms-word-break: normal;
+            word-break: normal;
+        }
+      }
       .careersSearchBlock__submit{
         color: #fff;
         font-weight: 400;

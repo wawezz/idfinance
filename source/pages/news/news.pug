@@ -11,12 +11,10 @@ block main
                 h1.topBanner__title Подпишитесь#[br]на наши новости.
                 form.topBanner__form
                     input(type="email" placeholder="Email" value="").topBanner__input
-                    input(type="submit" value="Подписаться").topBanner__submit
-        .topBanner__down.d-block.d-md-none
-            img(src=require("./images/down.png"))                    
-    .main.container.custom-container
-        .main__wrapper
-            h2.title News
+                    input(type="submit" value="Подписаться").topBanner__submit                   
+    .main.container.custom-container.custom-fluid-container
+        .main__wrapper.main__wrapper-fluid
+            h2.title.title-m2 News
             .newsBlock
                 .newsBlock__list
                     .newsBlock__item

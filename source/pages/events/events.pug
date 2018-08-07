@@ -2,7 +2,7 @@ extends ../../components/base/base
 block title
     | Events page
 block main
-    .topSecondaryBar
+    .topSecondaryBar.d-none.d-md-flex
         ul.topSecondaryBar__menu.container.custom-container
             li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Financial Results]
             li.topSecondaryBar__menuItem #[a(href="team.html").topSecondaryBar__menuLink Corporate Governance]
@@ -15,14 +15,12 @@ block main
             .topBanner__textWrapper
                 h1.topBanner__title Next Event
                 h3.topBanner__text #[i.fa.fa-calendar] Find your purpose and build relationships
-                h3.topBanner__text #[i.fa.fa-map-marker] with a ID Finance
-        .topBanner__down.d-block.d-md-none
-            img(src=require("./images/down.png"))                
+                h3.topBanner__text #[i.fa.fa-map-marker] with a ID Finance             
     .main.container.custom-container
         .main__wrapper
             h2.title Calendar 2018
             .eventsList 
-                .eventsList__header
+                .eventsList__header.d-none.d-md-flex
                     .eventsList__haderDate Date
                     .eventsList__haderEvent Event
                     .eventsList__haderVenue Venue
@@ -62,7 +60,7 @@ block main
                         a(href="#").eventsList__itemAction.active Meet to us
                         .eventsList__itemAction.ended Ended
                     .eventsList__itemHr    
-                ul.eventsList__navigation 
+                ul.eventsList__navigation.d-none.d-md-flex 
                     li.eventsList__navigationItem
                         a(href="#").eventsList__navigationLink 2017
                     li.eventsList__navigationItem
@@ -72,4 +70,12 @@ block main
                     li.eventsList__navigationItem
                         a(href="#").eventsList__navigationLink 2014
                     li.eventsList__navigationItem
-                        a(href="#").eventsList__navigationLink 2013                                                                                                  
+                        a(href="#").eventsList__navigationLink 2013     
+                .eventsList__navigation-mobile.d-inline-block.d-md-none 
+                    select.eventsList__navigation-mobileSelect
+                        option(value="2018") 2018
+                        option(value="2017") 2017
+                        option(value="2017") 2016
+                        option(value="2017") 2015
+                        option(value="2017") 2014
+                        option(value="2017") 2013
