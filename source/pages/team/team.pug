@@ -2,7 +2,7 @@ extends ../../components/base/base
 block title
     | Team page
 block main
-    .topSecondaryBar
+    .topSecondaryBar.d-none.d-md-flex
         ul.topSecondaryBar__menu.container.custom-container
             li.topSecondaryBar__menuItem #[a(href="#").topSecondaryBar__menuLink Financial Results]
             li.topSecondaryBar__menuItem #[a(href="team.html").topSecondaryBar__menuLink.active Corporate Governance]
@@ -14,11 +14,9 @@ block main
         .topBanner__textOverlay
             .topBanner__textWrapper
                 h1.topBanner__title Become part of out team!
-                h3.topBanner__text Find your purpose and build relationships#[br]with a ID Finance
-        .topBanner__down.d-block.d-md-none
-            img(src=require("./images/down.png"))                
+                h3.topBanner__text Find your purpose and build relationships#[br]with a ID Finance              
     .main.container.custom-container
-        .main__wrapper
+        .main__wrapper.main__wrapper-fluid
             .teamBlock
                 .teamBlock__item
                     img(src=require("./images/team1.jpg")).teamBlock__img
@@ -67,8 +65,8 @@ block main
                         input(type="checkbox" id="agreement" name="agreement").connectUs__formCheckbox
                         span.connectUs__formCheckboxOuter.fa
                     .connectUs__formBottomText #[span.connectUs__formCheckboxSpanLable I Consent.] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius malesuada convallis. Phasellus pellentesque, mi id consectetur cursus, sapien lorem laoreet velit, vulputate molestie risus quam eu est.
-    .main.container.custom-container
-        .main__wrapper                 
+    .main.container.custom-container.custom-fluid-container
+        .main__wrapper.main__wrapper-fluid                 
             .infoBlock.infoBlock-m4
                 .infoBlock__data
                     .infoBlock__title Why work for us?
