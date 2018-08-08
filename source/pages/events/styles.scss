@@ -68,8 +68,10 @@
                 border-radius: 5px;
                 padding: 5px;
                 text-align: center;
+                cursor: pointer;
                 &.ended{
-                    display: none;    
+                    display: none; 
+                    color: #777!important;   
                 }
                 @include media-breakpoint-down(sm) {
                     width: 100%;
@@ -104,7 +106,7 @@
     .eventsList__navigation{
         display: flex;
         justify-content: center;
-        margin: 50px auto 10px auto;
+        margin: 50px auto 35px auto;
         .eventsList__navigationItem{
             margin: 0 20px;
             .eventsList__navigationLink{
@@ -117,6 +119,7 @@
     .eventsList__navigation-mobile{
         position: relative;
         width: 100%;
+        margin-bottom: 30px;
         &:after {
             content: '\F078';
             font: 20px FontAwesome;
@@ -142,6 +145,148 @@
             appearance: none;
             -ms-word-break: normal;
             word-break: normal;
+            padding: 0 calc(50% - 50px);
+        }
+    }
+}
+
+#eventsModal{
+    .eventsModal{
+        max-width: 615px;
+        .eventsModal__body{
+            padding: 30px 14%;
+            .eventsModal__form{
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: #333;
+                .eventsModal__formLabel{
+                    display: flex;
+                    margin: 15px 0 0 0;
+                    color: #0071bc;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+                .eventsModal__formInput, .eventsModal__formSelect, .eventsModal__formTextarea{
+                    width: 100%;
+                    border: 1px solid #ddd;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+                .eventsModal__formInput, .eventsModal__formSelect{
+                    height: 45px;
+                }
+                .eventsModal__formSelect{
+                    background-color: #fff;
+                }
+                .eventsModal__formRow-bottom{
+                    display: flex;
+                    margin: 15px 0;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include media-breakpoint-down(sm) {
+                        flex-flow: column;
+                    }
+                }
+                .eventsModal__formSelectWrapper{
+                    position: relative;
+                    width: 100%;
+                    &:after {
+                        content: '\F078';
+                        font: 20px FontAwesome;
+                        color: #333;
+                        right: 15px;
+                        top: 34%;
+                        position: absolute;
+                        pointer-events: none;
+                    }
+                    .eventsModal__formSelect{
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        -ms-word-break: normal;
+                        word-break: normal;
+                    }
+                }
+                .eventsModal__agreement{
+                    align-items: center;
+                    display: flex;
+                    width: 100%;
+                    .eventsModal__checkboxLable{
+                        width: 20px;
+                        height: 20px;
+                        float: left;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #ddd;
+                        cursor: pointer;
+                        .eventsModal__checkbox:checked + .eventsModal__checkboxOuter::before {
+                          content: "\F00c";
+                          display: flex;
+                          height: 18px;
+                          width: 18px;
+                          margin: 0;
+                          padding: 0;
+                          font-size: .8rem;
+                          justify-content: center;
+                          align-items: center;
+                        }
+                        .eventsModal__checkbox{
+                          display: none;
+                        }
+                        .eventsModal__checkboxOuter{
+                          width: 18px;
+                          height: 18px;
+                          background-color: #fff;
+                          display: flex;
+                          position: relative;
+                          color: #0071bc;
+                        }
+                      }
+                      .eventsModal__agreementsText{
+                        display: block;
+                        margin-left: 20px;
+                        text-align: left;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        color: #333;
+                      }
+                }
+                .eventsModal__submit{
+                    width: 100%;
+                    max-width: 255px;
+                    height: 50px;
+                    background-color: #0071bc;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    margin: 35px auto 0 auto;
+                    cursor: pointer;
+                    display: block;
+                }
+            }
+        }
+        .eventsModal__top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            margin-bottom: 20px;
+            .eventsModal__title{
+                font-weight: 700;
+                font-size: 1.6rem;
+                color: #0071bc;
+                line-height: 1;
+            }
+            .eventsModal__text{
+                margin-top: 20px;
+                display: block;
+                font-weight: 400;
+                font-size: 1rem;
+                color: #333;
+            }
         }
     }
 }

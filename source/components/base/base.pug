@@ -54,7 +54,15 @@ html
             block main
             footer.footer
                 .footer__wrapper.container.custom-container
-                    .footer__copyright © 2012 — 2018 ID Finance
+                    .footer__justifier
+                        .footer__copyright © 2012 — 2018 ID Finance
+                        ul.footer__langs.d-flex.d-md-none
+                            li.footer__langsItem 
+                                a(href="#").footer__langsLink
+                                    img(src=require("./images/us.png"))
+                            li.footer__langsItem.active 
+                                a(href="#").footer__langsLink
+                                    img(src=require("./images/es.png"))
                     ul.footer__social 
                         li.footer__socialItem
                             a(href="#").footer__socialLink

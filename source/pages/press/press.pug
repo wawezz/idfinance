@@ -14,7 +14,7 @@ block main
         .topBanner__textOverlay
             .topBanner__textWrapper
                 h1.topBanner__title ID Finance is lorem ipsum #[br] dolor sit amet
-                a(href="#").topBanner__button Связаться с пресс службой             
+                .topBanner__button(data-toggle="modal" data-target="#pressModal") Связаться с пресс службой           
     .main.container.custom-container
         .main__wrapper
             .pressBlock
@@ -38,3 +38,36 @@ block main
                     img(src=require("./images/press9.png")).pressBlock__img
                 a(href="").pressBlock__item
                     img(src=require("./images/press10.png")).pressBlock__img
+    #pressModal.modal.modal-custom.fade(tabindex='-1', role='dialog', aria-labelledby='pressModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-lg.modal-dialog-centered.pressModal(role='document')
+            .modal-content
+                .modal-header
+                    span.close(type='button', data-dismiss='modal', aria-label='Close') x
+                .modal-body.pressModal__body
+                    .pressModal__top
+                        .pressModal__title Lorem ipsum dolor sit amet,
+                        .pressModal__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget 
+                    form.pressModal__form
+                        .pressModal__justifierWrapper
+                            .pressModal__justifier
+                                .pressModal__formRow
+                                    label(for="pressName").pressModal__formLabel Name
+                                    input(type="text" value="" id="pressName" name="pressName").pressModal__formInput
+                                .pressModal__formRow
+                                    label(for="pressEmail").pressModal__formLabel Email
+                                    input(type="email" value="" id="pressEmail" name="pressEmail").pressModal__formInput
+                                .pressModal__formRow
+                                    label(for="pressPhone").pressModal__formLabel Phone
+                                    input(type="text" value="" id="pressPhone" name="pressPhone").pressModal__formInput
+                            .pressModal__justifier
+                                .pressModal__formRow
+                                    label(for="pressMessage").pressModal__formLabel Message
+                                    textarea(id="pressMessage" name="pressMessage" rows="5").pressModal__formTextarea
+                        .pressModal__formRow.pressModal__formRow-bottom
+                            .pressModal__agreement 
+                                label(for="agreement").pressModal__checkboxLable
+                                    input(type="checkbox" id="agreement" name="agreement").pressModal__checkbox
+                                    span.pressModal__checkboxOuter.fa
+                                .pressModal__agreementsText Я согласен на обработку персональных данных
+                        .pressModal__formRow
+                            input(value="Отправить" type="submit").pressModal__submit

@@ -64,4 +64,14 @@ $(function () {
       modal.find('.modal-name').html(name);
       modal.find('.modal-position').html(position);
   })
+
+  $('#eventsModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var title = button.data('title');
+    var text = button.data('text');
+
+    var modal = $(this)
+    modal.find('.modal-text').html(text);
+    modal.find('.modal-title').html(title);
+})
 });

@@ -29,21 +29,36 @@ block main
                         .eventsList__itemDate #[i.fa.fa-calendar] 15 - 17 January 2018
                         .eventsList__itemName Euromoney Central and Eastern European Forum
                         .eventsList__itemPlace #[i.fa.fa-map-marker] Vienna
-                        a(href="#").eventsList__itemAction.active Meet to us
+                        .eventsList__itemAction.active(
+                            data-toggle="modal" 
+                            data-target="#eventsModal" 
+                            data-title="title"
+                            data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. "
+                        ) Meet to us
                         .eventsList__itemAction.ended Ended
                     .eventsList__itemHr
                     .eventsList__item
                         .eventsList__itemDate #[i.fa.fa-calendar] 7 June 2018
                         .eventsList__itemName Renaissance Capital's 22th Annual Russia investor Conference
                         .eventsList__itemPlace #[i.fa.fa-map-marker] Moskow
-                        a(href="#").eventsList__itemAction.active Meet to us
+                        .eventsList__itemAction.active(
+                            data-toggle="modal" 
+                            data-target="#eventsModal" 
+                            data-title="title"
+                            data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. "
+                        ) Meet to us
                         .eventsList__itemAction.ended Ended
                     .eventsList__itemHr
                     .eventsList__item
                         .eventsList__itemDate #[i.fa.fa-calendar] 10 August 2018
                         .eventsList__itemName Conference call & webcast: TCS Group Q1 2018 IFRS Results
                         .eventsList__itemPlace #[i.fa.fa-map-marker] St.Petersburg
-                        a(href="#").eventsList__itemAction.active Meet to us
+                        .eventsList__itemAction.active(
+                            data-toggle="modal" 
+                            data-target="#eventsModal" 
+                            data-title="title"
+                            data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. "
+                        ) Meet to us
                         .eventsList__itemAction.ended Ended
                     .eventsList__itemHr
                     .eventsList__item.ended
@@ -79,3 +94,30 @@ block main
                         option(value="2017") 2015
                         option(value="2017") 2014
                         option(value="2017") 2013
+    #eventsModal.modal.modal-custom.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-lg.modal-dialog-centered.eventsModal(role='document')
+            .modal-content
+                .modal-header
+                    span.close(type='button', data-dismiss='modal', aria-label='Close') x
+                .modal-body.eventsModal__body
+                    .eventsModal__top
+                        .modal-title.eventsModal__title
+                        .modal-text.eventsModal__text
+                    form.eventsModal__form
+                        .eventsModal__formRow
+                            label(for="eventsName").eventsModal__formLabel Name
+                            input(type="text" value="" id="eventsName" name="eventsName").eventsModal__formInput
+                        .eventsModal__formRow
+                            label(for="eventsEmail").eventsModal__formLabel Email
+                            input(type="email" value="" id="eventsEmail" name="eventsEmail").eventsModal__formInput
+                        .eventsModal__formRow
+                            label(for="eventsPhone").eventsModal__formLabel Phone
+                            input(type="text" value="" id="eventsPhone" name="eventsPhone").eventsModal__formInput
+                        .eventsModal__formRow.eventsModal__formRow-bottom
+                            .eventsModal__agreement 
+                                label(for="agreement").eventsModal__checkboxLable
+                                    input(type="checkbox" id="agreement" name="agreement").eventsModal__checkbox
+                                    span.eventsModal__checkboxOuter.fa
+                                .eventsModal__agreementsText Я согласен на обработку персональных данных
+                        .eventsModal__formRow
+                            input(value="Отправить" type="submit").eventsModal__submit

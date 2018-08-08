@@ -25,11 +25,13 @@
             font-weight: 200;
             color: #0071bc;
             text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             &:after{
                 content: "\25b2";
                 font-size: 2rem;
-                display: inline-block;
-                float: right;
+                display: block;
                 color: #333;
             }
             &.collapsed:after{

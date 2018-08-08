@@ -5,7 +5,6 @@
     flex-wrap:wrap;
     .pressBlock__item{
         display: flex;
-        flex-grow: 1;
         width: calc(25% - 40px);
         text-align: center;
         height: 160px;
@@ -21,6 +20,168 @@
         @include media-breakpoint-down(sm) {
             width: 100%;
             margin: 20px 0;
+            height: 90px;
         } 
+    }
+}
+
+#pressModal{
+    .pressModal{
+        max-width: 900px;
+        .pressModal__body{
+            padding: 30px 35px;
+            .pressModal__form{
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: #333;
+                .pressModal__formLabel{
+                    display: flex;
+                    margin: 15px 0 0 0;
+                    color: #0071bc;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+                .pressModal__formInput, .pressModal__formSelect, .pressModal__formTextarea{
+                    width: 100%;
+                    border: 1px solid #ddd;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+                .pressModal__formInput, .pressModal__formSelect{
+                    height: 45px;
+                }
+                .pressModal__formSelect{
+                    background-color: #fff;
+                }
+                .pressModal__formTextarea{
+                    min-height: 220px;
+                    @include media-breakpoint-down(md) {
+                        min-height: 210px;
+                    }
+                }
+                .pressModal__formRow-bottom{
+                    display: flex;
+                    margin: 15px 0;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include media-breakpoint-down(sm) {
+                        flex-flow: column;
+                    }
+                }
+                .pressModal__formSelectWrapper{
+                    position: relative;
+                    width: 100%;
+                    &:after {
+                        content: '\F078';
+                        font: 20px FontAwesome;
+                        color: #333;
+                        right: 15px;
+                        top: 34%;
+                        position: absolute;
+                        pointer-events: none;
+                    }
+                    .pressModal__formSelect{
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        -ms-word-break: normal;
+                        word-break: normal;
+                    }
+                }
+                .pressModal__agreement{
+                    align-items: center;
+                    display: flex;
+                    width: 100%;
+                    .pressModal__checkboxLable{
+                        width: 20px;
+                        height: 20px;
+                        float: left;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #ddd;
+                        cursor: pointer;
+                        .pressModal__checkbox:checked + .pressModal__checkboxOuter::before {
+                          content: "\F00c";
+                          display: flex;
+                          height: 18px;
+                          width: 18px;
+                          margin: 0;
+                          padding: 0;
+                          font-size: .8rem;
+                          justify-content: center;
+                          align-items: center;
+                        }
+                        .pressModal__checkbox{
+                          display: none;
+                        }
+                        .pressModal__checkboxOuter{
+                          width: 18px;
+                          height: 18px;
+                          background-color: #fff;
+                          display: flex;
+                          position: relative;
+                          color: #0071bc;
+                        }
+                      }
+                      .pressModal__agreementsText{
+                        display: block;
+                        margin-left: 20px;
+                        text-align: left;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        color: #333;
+                      }
+                }
+                .pressModal__submit{
+                    width: 100%;
+                    max-width: 255px;
+                    height: 50px;
+                    background-color: #0071bc;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    margin: 35px auto 0 auto;
+                    cursor: pointer;
+                    display: block;
+                }
+            }
+        }
+        .pressModal__top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            margin-bottom: 20px;
+            .pressModal__title{
+                font-weight: 700;
+                font-size: 1.6rem;
+                color: #0071bc;
+                line-height: 1;
+            }
+            .pressModal__text{
+                margin-top: 20px;
+                display: block;
+                font-weight: 400;
+                font-size: 1rem;
+                color: #333;
+            }
+        }
+        .pressModal__justifierWrapper{
+            display: flex;
+            justify-content: space-between;
+            @include media-breakpoint-down(sm) {
+                flex-flow: column;
+            }
+            .pressModal__justifier{
+                width: 49%;
+                display: block;
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
