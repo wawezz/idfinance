@@ -49,3 +49,19 @@ $(function () {
   });
 
 });
+
+$(function () {
+  $('#teamModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget);
+      var img = button.data('image');
+      var text = button.data('text');
+      var name = button.data('name');
+      var position = button.data('position');
+
+      var modal = $(this)
+      modal.find('.modal-image').css('background-image', 'url('+img+')');
+      modal.find('.modal-text').html(text);
+      modal.find('.modal-name').html(name);
+      modal.find('.modal-position').html(position);
+  })
+});

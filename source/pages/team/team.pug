@@ -18,35 +18,91 @@ block main
     .main.container.custom-container
         .main__wrapper.main__wrapper-fluid
             .teamBlock
-                .teamBlock__item
+                .teamBlock__item(
+                    data-toggle="modal" 
+                    data-target="#teamModal" 
+                    data-image=require("./images/team1.jpg")
+                    data-name="Boris Batine"
+                    data-position="CEO, founder"
+                    data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. Ut magna elit, molestie id orci ut, lobortis ornare dolor. In sagittis erat vel cursus volutpat. Vivamus sit amet odio pellentesque felis sollicitudin rhoncus. Praesent laoreet elit tortor, a rhoncus risus lacinia a. Curabitur vel risus a metus iaculis faucibus vel vel sem.<br><br>Nam id imperdiet eros. Aliquam ut finibus nunc. Donec bibendum eleifend nulla ut accumsan. Aenean et nunc sapien. Donec finibus lectus sit amet felis luctus porta. Integer bibendum diam a lorem blandit, ut pretium turpis finibus. Duis interdum lectus sit amet pharetra dignissim. In ut euismod leo, eget blandit nunc. Nulla facilisi.Nunc efficitur nec felis id pharetra. Sed ac sollicitudin lectus. Donec ultricies ornare sapien in suscipit. Quisque ac lobortis ante, at dignissim dui."
+                    )
                     img(src=require("./images/team1.jpg")).teamBlock__img
                     .teamBlock__name Boris Batine
                     .teamBlock__position CEO, founder 
-                .teamBlock__item
+                .teamBlock__item(
+                    data-toggle="modal" 
+                    data-target="#teamModal" 
+                    data-image=require("./images/team2.jpg")
+                    data-name="Alexander Dunaev"
+                    data-position="COO, founder"
+                    data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. Ut magna elit, molestie id orci ut, lobortis ornare dolor. In sagittis erat vel cursus volutpat. Vivamus sit amet odio pellentesque felis sollicitudin rhoncus. Praesent laoreet elit tortor, a rhoncus risus lacinia a. Curabitur vel risus a metus iaculis faucibus vel vel sem.<br><br>Nam id imperdiet eros. Aliquam ut finibus nunc. Donec bibendum eleifend nulla ut accumsan. Aenean et nunc sapien. Donec finibus lectus sit amet felis luctus porta. Integer bibendum diam a lorem blandit, ut pretium turpis finibus. Duis interdum lectus sit amet pharetra dignissim. In ut euismod leo, eget blandit nunc. Nulla facilisi.Nunc efficitur nec felis id pharetra. Sed ac sollicitudin lectus. Donec ultricies ornare sapien in suscipit. Quisque ac lobortis ante, at dignissim dui."
+                    )
                     img(src=require("./images/team2.jpg")).teamBlock__img
                     .teamBlock__name Alexander Dunaev
                     .teamBlock__position COO, founder  
-                .teamBlock__item
+                .teamBlock__item(
+                    data-toggle="modal" 
+                    data-target="#teamModal" 
+                    data-image=require("./images/team3.jpg")
+                    data-name="Kieran Donnely"
+                    data-position="Board Member"
+                    data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. Ut magna elit, molestie id orci ut, lobortis ornare dolor. In sagittis erat vel cursus volutpat. Vivamus sit amet odio pellentesque felis sollicitudin rhoncus. Praesent laoreet elit tortor, a rhoncus risus lacinia a. Curabitur vel risus a metus iaculis faucibus vel vel sem.<br><br>Nam id imperdiet eros. Aliquam ut finibus nunc. Donec bibendum eleifend nulla ut accumsan. Aenean et nunc sapien. Donec finibus lectus sit amet felis luctus porta. Integer bibendum diam a lorem blandit, ut pretium turpis finibus. Duis interdum lectus sit amet pharetra dignissim. In ut euismod leo, eget blandit nunc. Nulla facilisi.Nunc efficitur nec felis id pharetra. Sed ac sollicitudin lectus. Donec ultricies ornare sapien in suscipit. Quisque ac lobortis ante, at dignissim dui."
+                    )
                     img(src=require("./images/team3.jpg")).teamBlock__img
                     .teamBlock__name Kieran Donnely
                     .teamBlock__position Board Member 
-                .teamBlock__item
+                .teamBlock__item(
+                    data-toggle="modal" 
+                    data-target="#teamModal" 
+                    data-image=require("./images/team4.jpg")
+                    data-name="Ekatetina Kazak"
+                    data-position="CRO"
+                    data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. Ut magna elit, molestie id orci ut, lobortis ornare dolor. In sagittis erat vel cursus volutpat. Vivamus sit amet odio pellentesque felis sollicitudin rhoncus. Praesent laoreet elit tortor, a rhoncus risus lacinia a. Curabitur vel risus a metus iaculis faucibus vel vel sem.<br><br>Nam id imperdiet eros. Aliquam ut finibus nunc. Donec bibendum eleifend nulla ut accumsan. Aenean et nunc sapien. Donec finibus lectus sit amet felis luctus porta. Integer bibendum diam a lorem blandit, ut pretium turpis finibus. Duis interdum lectus sit amet pharetra dignissim. In ut euismod leo, eget blandit nunc. Nulla facilisi.Nunc efficitur nec felis id pharetra. Sed ac sollicitudin lectus. Donec ultricies ornare sapien in suscipit. Quisque ac lobortis ante, at dignissim dui."
+                    )
                     img(src=require("./images/team4.jpg")).teamBlock__img
                     .teamBlock__name Ekatetina Kazak
                     .teamBlock__position CRO                                                        
-                .teamBlock__item
+                .teamBlock__item(
+                    data-toggle="modal" 
+                    data-target="#teamModal"
+                    data-name="Javier Lopez"
+                    data-position="CFO" 
+                    data-image=require("./images/team5.jpg")
+                    data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. Ut magna elit, molestie id orci ut, lobortis ornare dolor. In sagittis erat vel cursus volutpat. Vivamus sit amet odio pellentesque felis sollicitudin rhoncus. Praesent laoreet elit tortor, a rhoncus risus lacinia a. Curabitur vel risus a metus iaculis faucibus vel vel sem.<br><br>Nam id imperdiet eros. Aliquam ut finibus nunc. Donec bibendum eleifend nulla ut accumsan. Aenean et nunc sapien. Donec finibus lectus sit amet felis luctus porta. Integer bibendum diam a lorem blandit, ut pretium turpis finibus. Duis interdum lectus sit amet pharetra dignissim. In ut euismod leo, eget blandit nunc. Nulla facilisi.Nunc efficitur nec felis id pharetra. Sed ac sollicitudin lectus. Donec ultricies ornare sapien in suscipit. Quisque ac lobortis ante, at dignissim dui."
+                    )
                     img(src=require("./images/team5.jpg")).teamBlock__img
                     .teamBlock__name Javier Lopez
                     .teamBlock__position CFO 
-                .teamBlock__item
+                .teamBlock__item(
+                    data-toggle="modal" 
+                    data-target="#teamModal"
+                    data-name="Alessandro Ceschel"
+                    data-position="CMO" 
+                    data-image=require("./images/team6.jpg")
+                    data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. Ut magna elit, molestie id orci ut, lobortis ornare dolor. In sagittis erat vel cursus volutpat. Vivamus sit amet odio pellentesque felis sollicitudin rhoncus. Praesent laoreet elit tortor, a rhoncus risus lacinia a. Curabitur vel risus a metus iaculis faucibus vel vel sem.<br><br>Nam id imperdiet eros. Aliquam ut finibus nunc. Donec bibendum eleifend nulla ut accumsan. Aenean et nunc sapien. Donec finibus lectus sit amet felis luctus porta. Integer bibendum diam a lorem blandit, ut pretium turpis finibus. Duis interdum lectus sit amet pharetra dignissim. In ut euismod leo, eget blandit nunc. Nulla facilisi.Nunc efficitur nec felis id pharetra. Sed ac sollicitudin lectus. Donec ultricies ornare sapien in suscipit. Quisque ac lobortis ante, at dignissim dui."
+                    )
                     img(src=require("./images/team6.jpg")).teamBlock__img
                     .teamBlock__name Alessandro Ceschel
                     .teamBlock__position CMO 
-                .teamBlock__item
+                .teamBlock__item(
+                    data-toggle="modal" 
+                    data-target="#teamModal" 
+                    data-image=require("./images/team7.jpg")
+                    data-name="Pavel Shareiko"
+                    data-position="CTO"
+                    data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. Ut magna elit, molestie id orci ut, lobortis ornare dolor. In sagittis erat vel cursus volutpat. Vivamus sit amet odio pellentesque felis sollicitudin rhoncus. Praesent laoreet elit tortor, a rhoncus risus lacinia a. Curabitur vel risus a metus iaculis faucibus vel vel sem.<br><br>Nam id imperdiet eros. Aliquam ut finibus nunc. Donec bibendum eleifend nulla ut accumsan. Aenean et nunc sapien. Donec finibus lectus sit amet felis luctus porta. Integer bibendum diam a lorem blandit, ut pretium turpis finibus. Duis interdum lectus sit amet pharetra dignissim. In ut euismod leo, eget blandit nunc. Nulla facilisi.Nunc efficitur nec felis id pharetra. Sed ac sollicitudin lectus. Donec ultricies ornare sapien in suscipit. Quisque ac lobortis ante, at dignissim dui."
+                    )
                     img(src=require("./images/team7.jpg")).teamBlock__img
                     .teamBlock__name Pavel Shareiko
                     .teamBlock__position CTO
-                .teamBlock__item
+                .teamBlock__item(
+                    data-toggle="modal" 
+                    data-target="#teamModal" 
+                    data-image=require("./images/team8.jpg")
+                    data-name="Rosa Modergo"
+                    data-position="Head of Legal<br>and Compliance"
+                    data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas orci. Phasellus vel dolor sit amet sapien consectetur tempor non et tortor. Aliquam eget consectetur turpis. Ut magna elit, molestie id orci ut, lobortis ornare dolor. In sagittis erat vel cursus volutpat. Vivamus sit amet odio pellentesque felis sollicitudin rhoncus. Praesent laoreet elit tortor, a rhoncus risus lacinia a. Curabitur vel risus a metus iaculis faucibus vel vel sem.<br><br>Nam id imperdiet eros. Aliquam ut finibus nunc. Donec bibendum eleifend nulla ut accumsan. Aenean et nunc sapien. Donec finibus lectus sit amet felis luctus porta. Integer bibendum diam a lorem blandit, ut pretium turpis finibus. Duis interdum lectus sit amet pharetra dignissim. In ut euismod leo, eget blandit nunc. Nulla facilisi.Nunc efficitur nec felis id pharetra. Sed ac sollicitudin lectus. Donec ultricies ornare sapien in suscipit. Quisque ac lobortis ante, at dignissim dui."
+                    )
                     img(src=require("./images/team8.jpg")).teamBlock__img
                     .teamBlock__name Rosa Modergo
                     .teamBlock__position Head of Legal #[br]and Compliance           
@@ -75,3 +131,15 @@ block main
                         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel malesuada lorem, non accumsan lectus. Aenean eget velit ligula. Integer pretium egestas sem, vitae rhoncus urna viverra at.
                 .infoBlock__imageWrapper
                     img.infoBlock__image(src=require("./images/teamImg.jpg"))
+    #teamModal.modal.modal-custom.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-lg.modal-dialog-centered.teamModal(role='document')
+            .modal-content
+                .modal-header
+                    span.close(type='button', data-dismiss='modal', aria-label='Close') x
+                .modal-body.teamModal__body
+                    .teamModal__top
+                        .modal-image.teamModal__image
+                        .teamModal__info
+                            .modal-name.teamModal__name
+                            .modal-position.teamModal__position
+                    .modal-text

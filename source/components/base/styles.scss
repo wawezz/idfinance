@@ -766,3 +766,36 @@
   select::-ms-expand {
     display: none;
   }
+
+.modal-custom{
+    padding-right: 0!important;
+      .modal-content{
+        border-radius: 0;
+        border: 1px solid #dedede;
+        .modal-header{
+            position: absolute;
+            right: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            border: none;
+            color: #304a70;
+            font-size: 2rem;
+            font-weight: 600;
+            z-index: 1;
+            .close{
+                color: #304a70;
+                opacity: 1;
+                -webkit-appearance: none;
+                margin: 0;
+                padding: 0 .4rem;
+            }
+        }
+        .modal-body{
+            font-weight: 400;
+            color: #333;
+            font-size: 1rem;
+        }
+    }
+}

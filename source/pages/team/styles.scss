@@ -31,3 +31,49 @@
         }
     }
 }
+
+#teamModal{
+    .teamModal{
+        max-width: 615px;
+        .teamModal__body{
+            padding: 15px 30px;
+        }
+        .teamModal__top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            @include media-breakpoint-down(sm) {
+                flex-flow: column;
+            }
+            .teamModal__image{
+                width: 110px;
+                height: 110px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                display: block;
+            }
+            .teamModal__info{
+                display: block;
+                margin-left: 35px;
+                @include media-breakpoint-down(sm) {
+                    margin-top: 30px;
+                    margin-left: 0;
+                }
+                .teamModal__name{
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                    color: #0071bc;
+                    line-height: 1;
+                    text-transform: uppercase;
+                }
+                .teamModal__position{
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
