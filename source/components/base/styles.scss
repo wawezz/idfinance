@@ -530,7 +530,7 @@
         }
         .topBanner__image{
             @include media-breakpoint-down(sm) {
-                min-height: 515px;
+                display: none;
             } 
         }
     }
@@ -544,17 +544,16 @@
         align-items: center;
         overflow: hidden;
         position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         @include media-breakpoint-down(sm) {
             min-height: 320px;
         }
         .topBanner__image{
             width: 100%;
             @include media-breakpoint-down(sm) {
-                min-height: 320px;
-                width: auto;
-                position: absolute;
-                left: -50%;
-                height: 100%;
+                display: none;
             }
         }
     }
