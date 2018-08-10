@@ -2,6 +2,7 @@ import 'bootstrap';
 import './styles.scss';
 import 'normalize.css';
 import $ from 'jquery';
+import 'slick-carousel';
 
 $(function () {
   $(".fileGetter").change(function () {
@@ -73,5 +74,11 @@ $(function () {
     var modal = $(this)
     modal.find('.modal-text').html(text);
     modal.find('.modal-title').html(title);
-})
+  })
+});
+
+$(".infoBlock__slickWrapper").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
 });
